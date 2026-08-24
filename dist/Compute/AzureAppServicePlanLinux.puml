@@ -1,13 +1,19 @@
 sprite $AzureAppServicePlanLinux [70x70/16z] {
-rTZfbgCW48PXi2Xg0RxxlzoXdTQZYObePdrFVdO_MQZAOfWudyTJUDkKnufl5HvK-AsIH_iF5JdgcYBcBv9nHTnLn0_JOSKyfvJO3vDHnIrz9RzHqM75PqK_
-Uopgqf7iXusVjBcR-M4ohcHzOQZywGtu_vNnLzVaWk9k-l59gylhRSmNzqZ_s3PEB4BniySoEURiazU56huh7vnHmveTpeiFp0jZKxmxkuPD-QvIC5ShUdPN
-WP7F_yu0_BOoly21f_bH7IYYTfZkbHhT8rhGGqMzTthI7H1H1O8TAUBAhnR0DeeezRBd1k3kvv4B_MnMfflRM2LHBt6g0DAzp-c83dA_aHK0zgYOS-hvUuKX
-aPX8E4xenUVlBvB5Jhw_5AGGAStVMkjkxlBAl4Zpel3stdMtIdb9ZijB8JQKi3O1csFAeyMoN-E2NeiNbOUP3um6e5nJ50KMjjLM0CWbfJL3t2cCMe4MBoWE
-WuTz5GR0nXLfC53OnoWLmBXYy5B3OmqAW8ULXWnzKWm2m4OL0GZqfF2ir5750QhXgUW9lGkAoBF28jekAUqPcVhDjTLHfTI2yeWacryQrq752X6tHdj5M0Ar
-Qer75F5AFG5uYr0cQKqJCGQKKetcwfvX9ahqLKcdYXRwJe3jp0WjgPqgfhHK03zIKgCpHOsM6DijK5hZciyoMXCFXmhP6QBxlruH4LfBVgOuRvJKR9eNY2iI
-BOd4CyKIRLAWkHS0wz5bYmFpeZdjbEhctbR5UVGgZefachDrOBvjcovTKU9Upc4_BzoHkVjNjvBekX4_
+vTO7alCe48PXv6uw0P_lVzkLaoJ_eaPGctVVYZEs7mVYNSQw_vYCzjzJyb-eQByfHQFq2njNLiJD-f8DArw4cNEN2HrL8lYHbLush1W_qj-fHEOrxoewgbYn
+bUaFL8oFj9VmABr2nnLHZrvk-YUiWF-ReXxzONQTNes_SwJjpr-DuueFhqOy-fsV1Lk_utV1eRCYFuoHoQRWsEnywIkOchj_bbBAxrE20v2KvFSeRKcf8Wcb
+qbVC_NglgwakKHQqPBiolU-s1QRcg-80fiu0tvMgIcjgkM7jLyM3HywZAlIATsL-DLRbfy5S-ih8EGseUXRB9Dx_HdbWDGBAB9abBpSyEksOeQ9-SNzfu4GY
+ajRghipTfG0iwPFYqVoz3a19MpSS6HbeKtBQYvsPK02qT8ZHTaO6CrHeEbPRcrPQ2opfcA1Lh4qe0OMdxnfYJb4q0wNl1ALYRLW9HAdfrm2TKXe4Ub82CgCe
+GA2J8iWpYWDKbvDo2vvH0X19fqJDshXIW7P6Rakw5HjNQWsK9Nr7iVud8qQL2291lNqhnffogm6CA5OAhJcGZmW9UOKpyOXIcj6p1cZQoqp4J6iLbufNUcS0
+U5UKFlc0OlIf0h4h-_yPa8lCwPC0sbD8BXKDsjAIkWerkSYCzbnsH6cBBvN8jCVLULc9cpJmza-la8kSwL00xtsoqZjj8_D5XR-KT-tpdpgwOwgvR3Fl_ggy
+x39t1cHYqOBxblFxsymmzrFXTKD-0m
 }
 
 AzureEntityColoring(AzureAppServicePlanLinux)
 !define AzureAppServicePlanLinux(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAppServicePlanLinux, AzureAppServicePlanLinux)
 !define AzureAppServicePlanLinux(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAppServicePlanLinux, AzureAppServicePlanLinux)
+!procedure AzureAppServicePlanLinux($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAppServicePlanLinux, $stereo=AzureAppServicePlanLinux, $tags, $link)
+ !endprocedure
+!procedure AzureAppServicePlanLinux($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAppServicePlanLinux, $tags, $link, AzureAppServicePlanLinux)
+!endprocedure

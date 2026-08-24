@@ -1,13 +1,18 @@
 sprite $AzureExpressRouteDirect [70x70/16z] {
-xTP7Ojmm341H42Jg_GySoSAO3MwQzEHjtBz9gCBd_LSRKKDuIg5BXMVGGuFx6ht2f_Rp_6AG1h-uKfwiX2Vd4cgl5BYD-VcbG74NEh4vtARkRafYxivm4_f9
-mVnKu9xuwzVQBSrF53jpHxZ3NyIK3mOti9_QydbN3fyTxRokK1fBeFfEQfb5p8YlXCoumbkgdsIDzWRJGK9x_oYl6wnNeMy3OtCL4XH7kPENYXoem0JbHB19
-3cs9I3G6ZLWE_CvHxiZrK66FK9h9J_cYge9f93gS7-K9gqh98ZtJzWjeAJTLpID13hWTvMq_-KmwKPNqA7UaIkbjkMDHhVDeRLzAoPuqwM8mxh9Ujz4IR5Xf
-nAhQXdsAmYnT2hlpcg68PEyhg2fPH06NYepVOPkfrZG2gDHLLiL6dVd8zWtH5N7N7e6gscYWIyLW8H7nXdqAgCeqaBbY38lI8WB04RagBLbBNi4h517NY02e
-2b9NHysCvi4g72WYpXWHK5Le-RiWuBmMZXjoORmYS8bAeT1WhSXwY4D4UeK1eELlfRtIoXL1qxZeE5jq-iGpYoFD8luun71IXgII4xCI4P68DDYHMOEG_fGU
-4U4I4HPOQFotN37JY9piSOXhycllK3DaUHKHXba_ht9ifZ8eMQIO6S9xRCvm4W4sam_VYKn64LcMKk1TnTPCIMQtbREt29K1xn633ycIQJ3XP3yPZKmQ4JEh
-aCX6uvP6KEDf-Wb5_Q1RfB0VAdoM-4cdIA6NDUANt-fT6XOu8COZXmjy2VbE4BviVSemmZsLzPgqVZRntpS
+xTQ7TZ8X48RX6OHfV-7-xpQSdLLtW8HeUdbJRS_vxDPdzrlnNevuBqMyT3UIow4NJ7brXLwgU9_e6jMxerTHxCBm2n0ptWnIivSefa8irde9qlfZteiGgw-X
+XF_klZxXtnTCcO_Xrar8_HF7SEYPIZp4Osia7huQH8NeUc2A_7b4uQroGjZ3JEwifroE4MvbYA4xUKJcYeYu4IfbEcT-psw8f0dIScQDL6q6unpPv-JfJHjw
+4d66bbEaDKVsM9ep83OWfmaI6E6yd586v1GKaiPKh_15MLuVBDCnvAWkftYaip5NrP6WZ4Wneu6f-N1uG6Y6262lEBAdTan5yXG1b78jDqQEYlGAGYoRSKFK
+v8f0xXIEYWfqyOxO2Iy8fAUtAFSAvXq1k220dQATGf5eFuua039rfDKh4T5oHCZ4Rrz7ZDE6k58V-vpH50g8RGUHTmIyGQczmW4Hy7e4LBHUc3me0bv6Hv8V
+aoA2gb9RlgJhVsDWYvWRuZUiNopSx4bLQooEGKTQShcBX_9AoJlImXqfr2kyKdX3F4V8B4K40p9b4l6b7M68bRKYV0Xd2EfACGiC1IHCMJ5yp0ZMK_gaCH8O
+x1LnP3KcClqMdanPCpaYvCWgZapkbvXQzTQCJX6yuJE-R8nmgtHtSK1MgRaJaAmMaJNZb-2S404GKv5xFjwpsAnwQwGlDxpRYTyU
 }
 
 AzureEntityColoring(AzureExpressRouteDirect)
 !define AzureExpressRouteDirect(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureExpressRouteDirect, AzureExpressRouteDirect)
 !define AzureExpressRouteDirect(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureExpressRouteDirect, AzureExpressRouteDirect)
+!procedure AzureExpressRouteDirect($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureExpressRouteDirect, $stereo=AzureExpressRouteDirect, $tags, $link)
+ !endprocedure
+!procedure AzureExpressRouteDirect($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureExpressRouteDirect, $tags, $link, AzureExpressRouteDirect)
+!endprocedure

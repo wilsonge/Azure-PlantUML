@@ -1,9 +1,15 @@
 sprite $AzureIPAddressSpace [70x70/16z] {
-xT07Zk0W38NX1HVW_WVUcR5mwYDw1-1NYsFnfVoZskrsExFrper5ncYhNHl3M2GPX72CZKW_TiOYewAbZ6GuH6BY6Hx138zWXaTu1YCymoEOuH6UmGZFO8Hd
-A8HdC5BLJCivbx-vVZ7jZOX5Sg0MwPjfQwJwBD_6vYoOmV_4Kj5vmhFLlq4_rZDBDIk0-RlkSUKLAlwfU1pjVzSQYEgLyJQRxo8jkoAgmMXC6aWozrFpNibP
-RqWmUKi3kJ7M8yrPUkGt99ZJBHhTtwPtlyp5Ut-yILHY0WmHG1338np38vZX4Spm2C_m26Pu13CymZCOuHaUuPbw8YI3TZII3DubGZAh7Oa48-kTaCXkjzlz
+xSx9RW0X38FXBXaydFh-JzkDHIaQVbazurlYy8aF9oSd9oVrEzIvo7Ueiv0Mwbo4bUeYhCX6_iq84MOOOOOHds74PnZn6KPyXX6VOOIPYeZF87BzPfsrPtJl
+aAkaEIqoSzSjKcOwakPd9Y4R9SzwO7w-WaXvMgpCjnpjBoN-A2gIYgOoPcKbIbDYVAP4P4Opwwo4H6FQIWs9S9ICD6Qir93Ct3thV2UZCKhioC8iR8KNonB2
+zymmOZA4GEKZMDe8rpR21pR29yw5p_YzV_Pk8PbnIsQuSnciN0Ohbw7Aoid9oSaN
 }
 
 AzureEntityColoring(AzureIPAddressSpace)
 !define AzureIPAddressSpace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureIPAddressSpace, AzureIPAddressSpace)
 !define AzureIPAddressSpace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureIPAddressSpace, AzureIPAddressSpace)
+!procedure AzureIPAddressSpace($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureIPAddressSpace, $stereo=AzureIPAddressSpace, $tags, $link)
+ !endprocedure
+!procedure AzureIPAddressSpace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureIPAddressSpace, $tags, $link, AzureIPAddressSpace)
+!endprocedure

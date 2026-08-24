@@ -1,14 +1,19 @@
 sprite $AzureVirtualWAN [70x70/16z] {
-rPJRskeg34Lp1kRxF_3UnRI8rfQbL_-uyP1-WvaKeBy3Yzh_g39zYtWCNFb7Hs92_uh52VPZaCIPrj7uYFmeILRJI2I_DCLnZTCA7ZV8R_qa_cEKH7-FSXz6
-BPPW-WYdmiqlOlIQtcqrbqtumQDCnFgv9PvVuxb6Z_LkPcfNXu2F5IybesEvUZKUflofdNLB_wMVDvgiTEHdvrAV9CptqsMnaqqyIRf6hjxqngwnaoZ6VHc_
-tdKkpEAlcaXwsU8UPsQDHDxUSXPlKUOnkDU696jBOMmUkJ_L99QOKyzZiLnW0Nkso9UMERPD5dstb5hRHYtlWna_NYqwAne6hSmTIKo3yP9iCSkW8XcUWors
-ETWiu-SMi-naZceLLj9JinRzoSaYpoleKn2lW1DLA4a3RCJHANNGHkda4hvBgcYNT0i9KBXqpNWkSPfQwcj4IfWgAkqMKa3eeGcP1wZKAGUoQogJ03OiL17v
-fCvJAKmlOK8oQgW6e1iLnTtxa6AFx6KGb9Iw4sEy9sGjl3x1b70zUDukjJC-sr5xmkb0tYpXQBIXWD96Gpsn5AQ1lcgieCoM2fnOKf9mRPsq15VuR770Kz9s
-gj0BaPKk4SA9HQrBS4YOtf3IIsWgJ0JeR570I4GAa0wZKzYY0Q2DCujdfiqHIXS4xZ5XkiPn3ztYkV7xX-GvwhIzeqgto36NJ7rOZjEvOE6SPdvCbZpSJlUq
-VKcVBGB8-BWZ7bk_eCmM0t9kj00_9k9eioMdMX6qmkDQAgytGtjyoOPk4LnIQOq0eeVndgb7Sw2w1m2cHO3An83bEJfUZGD6gqZNEDgmzDaQShJh6kbXqiA0
-Sad9CjA0Y4tJBLnHh0t9Ce5ECK2jOQC9_JDQCHFq5H8ug4RV8-OHxa9_X_y
+rTJRqlCc38LX9910gxlxlzlwmylnO9f2wwF_FSd6p6DXCldhbydyq_ys_D5hWxqss5k4lKNOMuIzHTXBX9MN27kfC7kfi3NoMZ7VRJs5sRzelBOqDAMaNvmY
+AKdvhlYLff_4_X59lV9DUIvCsNrEKa-Sp8omJ4LzpXBhWtv7zfNUZ33TsP4v-wAeoFhfYfI1cP6ZrKaVtKoTbIAYjlpLcVPbR49CHCmNSLtsg-cKEUcoV33-
+wQ4ehsqDKsRbkgQ-LnwM3ahX3JOgposL__nOEFQ-KbkBezRgGXbsb4SYS1STOcLIwfM9QBrhOBVpwMVi-eaAKn6lx9eZIaDsEeqNNVhAMU4TyZq8l0AUKeCc
+3Q34PvpIfnwKLXblGIGq0vPE9IbGnO6urfL1UGwZVY9DKaDBbv8oeAbqnfMZJ0gxhhUGf42cShvuIjREUucFocDFgdQ-ATc1_5F0xQWXpA_7OWD2vSupBmKm
+nzkvjHxxQsQ8TARrxjUeR4Pwi-A6I3yfeFrDe2sKcR6AEYeLg6n6MB1BqO2DYWD69Eu6vCda19HHAK2nZc12PWTHigG4v5b9cdC59cHoS3vLcPGC67Ss6LE1
+THHUAdyj0o8V5I2hgaXgqDGBxcXFWQGZlgHRuQdLBOMFbI-t8bIYAwiuU8ED2WzBiQNmpwcYZaevzsXx2gxLCIhyeX5P5QXcLf__376-mQRozjV26k1z63jo
+mEq8QFt3jl8Rq8GdUnsDz1SdibLqnX7oKGhQV3xhFKLMe5oA1F8qoJ84u1MmKv66cjk4h6lerGne1p0Xc-Emm8pi5u7U6uC3HI18_1hz3G
 }
 
 AzureEntityColoring(AzureVirtualWAN)
 !define AzureVirtualWAN(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualWAN, AzureVirtualWAN)
 !define AzureVirtualWAN(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualWAN, AzureVirtualWAN)
+!procedure AzureVirtualWAN($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualWAN, $stereo=AzureVirtualWAN, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualWAN($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualWAN, $tags, $link, AzureVirtualWAN)
+!endprocedure

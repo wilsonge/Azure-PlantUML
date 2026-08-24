@@ -1,12 +1,18 @@
 sprite $AzureApplicationGateway [70x70/16z] {
-rT87hYud341X1Z0stl-28__a3ZeHKhXENZjgKymtjVn9TTNsVo1WiWYOF48cZv398tccAsffX4mQ8PD7p0nC0Z7rQ5gAMOYvZ-4h0_CznATO44Ea3p2to8Zr
-hXA4o1X3mTmXAkfH43hvKFU8oOWd2YICs5OmDuXERSzJkmnx6GDpWwYlMN6VNynKC1U8UVdKOlcGqPy-NU-OflzKgaUVPSFrYccws_SIrRXFLp0NY7ejaIv5
-OdCgc0j4NUjJdcQ-Kb7j0ym5ebDbkeaCj_utfQmT4JP4rbyNmukn0_ClIAdgaJvnDduOuGoPCx9-k2X6kuZqDONg6UbhIqeqFBBwj6ccUqxgaMdsLVziB-Iz
-csMzarAgVQKLoAkKzYAFcgf7qzexAoMKjmhaLKhTY8rIQYtTx6LgeR9laif6Geb2UPbN0QDGW6o531KzA1k10kQWjAEY1cLLgV35d1GvA59EIZjzQJ1Gf50X
-mhzkCr02WKA4ZDITKgcx1WJC8IW829XRXGZhzmeHrkyL8gpVAqHOlr20t39KY5mpL8ZSC5Hk43BuZP_oAJOxa6icXDq39CaGIJ94aWoH94CaoH19CXknNhwN
-xCi3oJ9v998imYIBC26IJO2a4o3fP7u2aaY0fEj0qZtbP_KN
+lT8BZkiW38LXGp37e4VslzkRU1BQ8nKDTQxcxxkMFfae-ny5_1VaELFWFT_aEOFHC-Gv0ogCS6642oFS0yGipDm2kjSimbn6xrhxJuC98DtKtwkgLc9MaMhz
+2Eg4reghhn0eJgMT11eVQXrfMc_aC3oiCxZgs7BAHQkfNeejCnZA9cU7qEvj6kvM4Ul9bQqVLQrRAgrXj7p7YfVx6Sx5QiUh1OHsyP9_nGe3ZwvBikwfYA1X
+WG4hbbDAvL8wYa7hxmou1hKELVHwKm3tEuBgjucfPX61ApPZveXiw6Vm2skjTosOC7D4f7PlEnLLBI9pXf5I1ZBEaLCsC__hckQF3En-52a6-q76DkDWSasJ
+uNxW3HaLaMqW6MQjU-VWOgeSobiNOaQAR6z8bPIpb6iYrvGK6mWfRyYrLk6HAynWecGpLgpC54mLHrYnCbEc9x8FYkNfYGR3IlsWL1aA8nufWo6545RsErO6
+mqeLKXXXHlChi99VROoCRD9G9krSH764YoWiU5yeZ71pHHSHxxjTzbdVxBBFMrTsZfigwmWpce-IUFce4BBCP7al4H9a60aoZ0GPHe8C8q66aI33I90fX4IP
+CEA54IwCS6648oHS8IJED4RYpFdOdzQEzkS5a63_
 }
 
 AzureEntityColoring(AzureApplicationGateway)
 !define AzureApplicationGateway(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureApplicationGateway, AzureApplicationGateway)
 !define AzureApplicationGateway(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureApplicationGateway, AzureApplicationGateway)
+!procedure AzureApplicationGateway($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureApplicationGateway, $stereo=AzureApplicationGateway, $tags, $link)
+ !endprocedure
+!procedure AzureApplicationGateway($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureApplicationGateway, $tags, $link, AzureApplicationGateway)
+!endprocedure

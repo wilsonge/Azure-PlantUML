@@ -1,12 +1,16 @@
 sprite $AzureDataBricks [70x70/16z] {
-rPW7aWGX24LNmLRlV-2DL67FQueTPoEL9kWNdnywFFsdgBtNHpNACL_ZA0-9wBJGVGsPIyWk4Cl2Ckfr2uWJyI_tHVFbryJQ_L27d22D77CudjhrKq3w1uEh
-_pxmTEB91-PBH4ddszqSGVG87cPk0oQS6uk3CV9-azV6tsIxu6gzIKJtYarEAiTczr7tqiw61FshZXmkVK4GcXyqVI4TE7F67EegM22OohHT1PkDy12Xgx0W
-qHZG6gmKeQ9wcs-Bwz0cGaLTtV5e2EHi6LTPQNZQzH98MIb2nQW33u2WbU1g33m4mbRYltHl3fn8ueAk-Q7YwjY440ZvcmftQa0XVlXHGULwaM2ZbXbKmek9
-0ggR02hnk88TwhAxTfgeUSu5-rMuZePggA4hQohlUUApL0w1Kyl1XGoFVqEwhfAkNXm8CqEN2jSxt6KOIPMm1aB_KoN7mo5KYJqHm89AEVhjwhoUi26mxyuM
-uucFiR5ZQc1J69hJ_7jo7L1of-bQS9vYKm8FD1uElMKpg_inkhVEQo2jJ1uayG18R0MQoZVA7-ZOl0RY2oA3UFRlhTaYyjyPN9Cvvi4QeF_pm5dWxBQUoeSi
-BjuAMRqhl_UsWczE7d-Byv_Y1G
+rPZNieGm34EVeypa_l_NthvLveo6Zj-MXECcd8MFArdxjZKOIpbg3riIo69CCrl0i1yp6EyNb3D6uRlVBlK007vbw32PV8aTvfmY-R1aN90euv4oc9Dcp1pc
+Xvo0aTEMGug7H3Edpw9O_Ax179u-h7nc62KKdRjKTK2K4uJrsKBTy9veWj06emW7BFN0zC9frIj610umZ59USCQWc_ZyUIW4_JoiKa-VNBI_A2gteWCNFsLQ
+5qH51sidmi8xXLkHZ10k7ArPso1cMy3xi7xoce7tkZmZQ3Tmu1ao2ZMPX9G_inIdKQfp01dYkSlg2UQkS_fKDut2tYKETHFjYZWkQ916E8cTofjQi1nfTzW1
+xenOkoftffhZP78ECvPe5moqQsjWDETz0B9bOuoDjRlvcp2NUQpvTh_6rmeT-EN4Xk9bx0i
 }
 
 AzureEntityColoring(AzureDataBricks)
 !define AzureDataBricks(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDataBricks, AzureDataBricks)
 !define AzureDataBricks(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDataBricks, AzureDataBricks)
+!procedure AzureDataBricks($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDataBricks, $stereo=AzureDataBricks, $tags, $link)
+ !endprocedure
+!procedure AzureDataBricks($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDataBricks, $tags, $link, AzureDataBricks)
+!endprocedure

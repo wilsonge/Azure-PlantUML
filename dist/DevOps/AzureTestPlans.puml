@@ -1,10 +1,16 @@
 sprite $AzureTestPlans [70x70/16z] {
-xTC7ijqW341H0Qh0_jURtt0JzWEd9puBkAC12Su4PlMOOKewgOI_jW89nSC4iym3WAUYtc-i_BHtUIhXXrH8lJGzYlR09D4UWYbH-yBy-flQbhuHc81s9i8u
-EwKmZEqStbau3mQf7QY8MiCm91qRJ6zOvnxu6A4lClF0P7kqQDEa-QSLMiZu0yic82n26yjuy49SdmC_n8IkOc7mbmM_n1YJgyZO0J4sQStmw3bj9cdY6sn_
-rEZ80H6kKdn3p2o3vnJSA2sJMcJn-ca9zr9AQjbs-EK1eMVvK3dzRRkeQ3vc5BgaDEfPSGWwGhcgvE91HxwirE8fE5WMjLUfdOv_u5PuvuV9zKlPod30Q-ID
--L6w6OIz-bROS96jqmV6Uk0YVH6sf1vbRQoUGzYowXNJDwLUOJVBB5_XUa-2hL3lWJsjTn0Sv3hFmB4xJ-i5uXaOu8TvF1xV
+xT47ZiCW48LXoS0m1ONxttRTPvN1MM3Jap-nhVhf8V9H080s0CY5Fag9XLIfZKhb_5K8bqY_7GhQkhQOt_lT4J-HGiqANkEc2Q_1OBcUAVJxrpv64AbKcqB7
+NGKXkOf27KW_mtGUnXXR5MD060DrUgPWMDiPxfWIzf3Msf6e2j1MWu8H04P4grRK27vkS4Rvan5Q0xys38DlLGpYtJ1iSu2qcbkENXlsDKXr3Aq5hxbXR1mI
+8jKfPARecG29gXXlfcoEyqXSgT2Mjn5p7SEN5BJAgQZ85gEDn5P4DBInsFYo4j6KKXBJCPB6iAWa6N-6AICJ8mRXD2TIewGrEqMxm2mRj1AYoNwyqvboba6A
+YHGLZN6Bqd5MAJkSKh-YlQYIkv4hZE7yVqOeswIrVBM-VVls0m
 }
 
 AzureEntityColoring(AzureTestPlans)
 !define AzureTestPlans(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTestPlans, AzureTestPlans)
 !define AzureTestPlans(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTestPlans, AzureTestPlans)
+!procedure AzureTestPlans($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTestPlans, $stereo=AzureTestPlans, $tags, $link)
+ !endprocedure
+!procedure AzureTestPlans($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTestPlans, $tags, $link, AzureTestPlans)
+!endprocedure

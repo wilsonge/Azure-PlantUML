@@ -1,9 +1,15 @@
 sprite $AzureMobileEngagement [70x70/16z] {
-xTP5WWGn28NXr8CWFNF_wxQxGTfB_bLMtoP6EGcYgGJbJgB9v9wYPp6siPxr0INeqmgw86IKBgoF2lXQhGhhjJ0IPL9eSCgaqFFdvJI8Ah_WhUDcnKoxYuZE
-5BDO2NfE0I-Z9nNyhwFd5DueabCiLgnPOLl5JoesMsKlLlHZYcqLy2gwhLYa78rn0BOAi5C0FA1CogHCogIuPnJt1gK2qBMoMirMo1zdbQ2KuWZpdYc48Cee
-fa4MAPwkKQdBdbQqBDCXAIwrYhSfP9xAg9oq
+xTH5SWH134HHLugDzx-jMyDSwc7wQyMBNEblBIltjp-sSdo0sRh5BAvkER-otMqKj4weAAtR8ohWNOrLs7P53wgybRVoLiXsXUE_5DICp_3hPApYvjQs8jfK
+_B3YgVGoTpzM0G_HYGg-lZC-JQ7lIL9JlA_uQ4KyunEL-CpyB8hTI4530sVKi52mK51I4X7B50qp1OijQAXk4PkqOuiMjs1efW2BBLXi0KvNz0J5Nq9vAsyb
+8afAn1cKg2bicG2mYI80FXFvufeIw1OlgH0wKKLnw-HTfTPuHOPELlHZIEz3iLJiL2LKHEDa9Uig_m
 }
 
 AzureEntityColoring(AzureMobileEngagement)
 !define AzureMobileEngagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMobileEngagement, AzureMobileEngagement)
 !define AzureMobileEngagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMobileEngagement, AzureMobileEngagement)
+!procedure AzureMobileEngagement($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMobileEngagement, $stereo=AzureMobileEngagement, $tags, $link)
+ !endprocedure
+!procedure AzureMobileEngagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMobileEngagement, $tags, $link, AzureMobileEngagement)
+!endprocedure

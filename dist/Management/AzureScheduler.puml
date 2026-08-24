@@ -1,14 +1,18 @@
 sprite $AzureScheduler [70x70/16z] {
-xTTNOkCm30HGT95fzp_kIX1X8mQfxJtpvVgCKJNXr-GZrFe6NnZh6y4aQ7sFFBwAHCnCH0WfqlSO5aHQBmgnU9WFIfYISgH9AUEnD0MV0hvZyTR8qoYNAQ-X
-UB0Mn_IxkPRsCfzeDeXLXIYSl0rY8-1uefXcEn0QGzazIW2rmeO0Mp-IznixuYZPOoGxDBuCN3QsE097R1QgkvRDhId2beiGYNcQGOftiKF9EfiDH2OLP4TQ
-sp1_OQAGsTWcciUNRk6q8ucXgg0TVUWs2Ooa3-5sJ7EfQFIXA9EKI30hXNmK77j7OQ848sl5p4JOPqf8KI1jcgfmZ8As1zOAxOgj57DbZC95IR6TeRc2NeXE
-pk1AmLtHkI9HI0vkhSGmLSc5wYXL8QzKb2Z4rqhUJJ9JE1HAkxaegPBD5765JeK-fqXhsqpHhC3xlBo-I57QfQ95iRUtjsVvEeMByhGhhxqRVrwntAZEyjBt
-DAMlKHxtwtFV-fc6b_j8y_6YKCCd975raAbIZjqIb1QpjDRuMj6a50XlcmLdYfmAbOEtnWjjC5F8oecq37cXnTaObUgbeOxIOAh0K68OMYEo8x9Gs2pVIDQT
-EDrAYe9f6BrWgEsXkH9VbVkbrzQ8m5AXCOn0C3JV9irWhO0c1frHV3mB0bahPACJf_z0d4y0ZyAb0f8PV-QtTfCzraQ2NIfWqKdynzLQIXbafU2TeTDfUxRj
-PY1SAH6-Ct6YY6sw7RqSNYeAXJ49noE2i8WUYlI3mShewT1G5WmUI1TivGylPSObP95f7Jc_ZS2prKKuaTolhcIuhYuyOWagJ5d9rDL5zBM8tgLSIeOXAzQ3
-OYLOoXZEAXAaaApM4LH_DTMggqzY4L7lnxbEb2bHtsSbiVCbuosErHeKXAMYvQDV7Ghakq86Fo24yDloaKy
+xTU7SiCW3CPnRD38vFtVjYJqora1gNltVxkclnFWZjJFwRzTwwrhTxrgehB9MMoGyK4P6rPR0-ba3CDYFR96hzmC8WWcVAdSEpeEKjWO_1YWuTkcmr57ZB21
+9jiQZSf0Z66S-qCUa48EWdHsAp3iTcXhK5bIMdFpMwAwTTH1-74I44subPcrDH_78BH5IhfMbDErXVHQe8m8PcXhLemZsje5IcRc3K9fegJ5C5Qnem2n2heo
+ha9sbEGfYrxo53QZ95T9-Ka5e-H0IGncLBXbHl6LnLNiXage9FQKR3QKOcNLrapXfnIJezXZeQSKUOwIdrBASvJ5diBnV2Ahv9ShSZwVZ-MjinpEhTsEyviK
+kiooQocleHAVhXpth7sjBXrs584YkEcxrWxbyAObUEjGPbovneezcB6bSyzJA8K9aF5qjmV38RAgfmWFmuIZx2OAc9l2guyKZ18er9ZmWBF6YlsZ5XnAy9S4
+m-20EPeaLgWpx6sAhaZnbSfW20pTEQiy_TTUU9Y6fQmWbg8m0WLCwKpXbbwIYyoAwXEAOfZRJUbOTHKabgdIPn5ZX8fbuFGh4KD42XZZs7-v8yKwl640bLPe
+e961WmAZ-Wm7Z4MSrqRcK7IiClbq1CRiZ6ZsFxT4jyMpdhXV_zM9aU3JfmT5Yv7x0Depr-B1N5cZfRP0gMzEWBnHgL_MVmy
 }
 
 AzureEntityColoring(AzureScheduler)
 !define AzureScheduler(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureScheduler, AzureScheduler)
 !define AzureScheduler(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureScheduler, AzureScheduler)
+!procedure AzureScheduler($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureScheduler, $stereo=AzureScheduler, $tags, $link)
+ !endprocedure
+!procedure AzureScheduler($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureScheduler, $tags, $link, AzureScheduler)
+!endprocedure

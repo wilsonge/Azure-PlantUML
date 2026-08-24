@@ -1,11 +1,18 @@
 sprite $AzureTrafficManager [70x70/16z] {
-pT7P0fmW38NXX26G-FuFN72sK-fHcwlvRsJzPb5-FBMJD84G9eLmXYFjefNXYDN3x1wZRQyAgROzlOUKns65C0Hf9C8m9CLmX3C4wRE9z9Ccynne0Y4CGLHh
-ppBQzqoAYbY_gBoFA4TIp8gac1N9CjfzDX2JJ-QlglfHataET46w0rFzjIn-Xm747LxUuuM0GXWP8J9bP4n0eOoCdbpnqSgOS6LMfAFIf3emqAbIfH45cRo2
-J5v11fMsHvKOTR70a96O6Inypfhq634bwgeq-LJZfj9aLJeYN248A8Xm1H6k5BzG024AC5VAu-_geaYvK4YW09DLr839AkhHWCaf0mbWKahOG919A10mg6oZ
-eMnhVN_DDki1wrzc6yesEbDCllbsoFoNeWsMaQdNIliWJhUkbGud2RCeBYMeKe8pZifOBK6KCwPjRoK8yrGuesyataUGGKKBPLpVI94JnWVYWGn7EEFxAqQ6
-8vo9CX1a648O31c2P9WLIJ04IJ0Bac8M9CaiI98HG58CHJXZ_qOHpf08GXWd4OGmB8vmXYDvXYESuSYFzmS
+pTC7hkmW38LXI02RlBR_tRvuoX6NuLWMQlDFIV-Knhylhxg54RyDP9DfWQ98BSigc0Xo9j899eBaSra64q8QYJ1X14m1Gn2nJxaHcueqMKoD4Vki6NbcY3WP
+8y_YYCzm91S9Cnn9QOkP4J2yWI785ZCZkum-kv6IKD5NzT1LSc2N4QafYzOCviHgNJCvrO4P4FrWQZA5dSsBcP6PAGcApwWbwJ34QWDJ4XJ2oAWqKmS6kOhM
+r8WoCd6bsqIWW8afmXKmeoAFg6BTIX-JF2ZTQeFR-gjRiGbJ-kaefmQLchXoTiGK84G10iLQAYLjAsi4YYGmCUNyMO42nb5eKC1iAshNLi7CoXLMilO6PbCn
+fFUMmUmelMgtS3PBfVLWE9j9kJ-tOjFxSs6gvrbAhRKraN4zpiOKjVMcMAPCsTv8ho41yr0kAEegMQvhoKGK83WJCDD9EWfsbUiZ8ShHwPv7Np1vLgo6VIU5
+CMhCwmhwFyv0uOmXTYgc4EOn_WxAQ3O42cEUum-CYt167uzuP3Z2cMx8o324CcXcE19d2BB5T8B46H-9Cpu2fhgCvbI1R3F9EPCuGyw4CFMZGX7Ea48862K1
+2J4y87vXn2-C-0MGB-u_
 }
 
 AzureEntityColoring(AzureTrafficManager)
 !define AzureTrafficManager(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTrafficManager, AzureTrafficManager)
 !define AzureTrafficManager(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTrafficManager, AzureTrafficManager)
+!procedure AzureTrafficManager($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTrafficManager, $stereo=AzureTrafficManager, $tags, $link)
+ !endprocedure
+!procedure AzureTrafficManager($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTrafficManager, $tags, $link, AzureTrafficManager)
+!endprocedure

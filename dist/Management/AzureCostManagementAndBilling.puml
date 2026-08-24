@@ -1,13 +1,17 @@
 sprite $AzureCostManagementAndBilling [70x70/16z] {
-rTTNUkCm30HWeeEw_u7Nab8u5EIbFZzbthRapm1mRNye8i9CzBboXkapvNE81FFKOOlC7ZBdIGNDlgTGX5Tt4OS0obE73mEKLGQD_0aeouoD12hhItOmK5cz
-EGK8e2otuSmdYYmWeAolcAv2HheyOmA0xxWyOdmW86Qggwkn6yJzf7Ib35U47RzAr0wkTegb0ABZBz6x5N5H1GpCNgYgGr054McNa0DpdKbcX5iLAncQhbmY
-nCZSRoPH4IYm0LEik1x8swtI71WOoN0U6etSNicVTbpCnED0rOrpEnDlPneVB4KLVm5zYpueD9G1HM-tya9atmlfk60h5sDt1-ANmhioHY8M5COkFYijGglr
--dGXtCisAruh0LrQcs_KXo5XCQ00WagplZiv5jJhUay5ks3Yg0EoLqfWbocsxNryl9AE8NX6mtP1OTcs74U2j2FlBctohSH_5GL5OIVTOtESY00HK7uOdpSx
-RvThvVxPo7uYtcwNo-qxgDZqchqf_eL2gC5wSR_uMeTL84FnTw-OWhTdBGQ2aU1CTKZBWUftabL4yGFG6aEY67os-yn8XKXeCH2MGSQlTImpvjrYxCA4uV_H
-ywbVpODba3cWepAn-c5CpBMk83D_91i_kaALOgOIGYIx0p8dSWmG8zAxuNqmb0lfUmmH3AyOHm1volIVABVxKAmXNTlRU5ym4ffKiTxxUwF7yZVOMLYS1ftx
-6BNLo8sJrXw5n6S2dkJh4JMFp9xXPjB-JFu1
+pTO7RWGn34FHR5mrARh_QTE9MGCqvK6s_GCy44AJtwAKqYKKT1b5Ix5o0IYd_pdsKqj8E8A0GdfQDw3GbWqel1MZTqIKc6aWjA8P64A96HY1Wc84rNIGWK4L
+7aCkeFIXXeWYc4OCGBMiCXC3JQ4bnBsX73FKSAGSXS0OeI8P0p8pu5IbQ0JLW578jctdQmfJ-1JdYbTwucS-nQc2DNICLhQ_pfZ25PiYjY57R4mmPMCA7mDb
+ZlXucieLFGN4FkOoIZwa-AuCJ3cee56fKW6YcNL5tQPLfMZ6z_BGXHJ_ILxt7SeCoHuhQ5NPcNm1PHZ3aDD4QKH1CCWKA78C2f0JKGWJJu72nl0oL_WOYMWb
+Pef0bfdUYrHiOE2GFwa8H7yUC7wIYZ46Klkg8u547ncGaJcvOhemkksCKuL2VSpC6aV0w820SPx5nbyL26KiGb01mXdJ2Ee2KOmDkQuPXOmXUWuWAW297Psl
+TW53ENuu8Jnsdm
 }
 
 AzureEntityColoring(AzureCostManagementAndBilling)
 !define AzureCostManagementAndBilling(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCostManagementAndBilling, AzureCostManagementAndBilling)
 !define AzureCostManagementAndBilling(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCostManagementAndBilling, AzureCostManagementAndBilling)
+!procedure AzureCostManagementAndBilling($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCostManagementAndBilling, $stereo=AzureCostManagementAndBilling, $tags, $link)
+ !endprocedure
+!procedure AzureCostManagementAndBilling($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCostManagementAndBilling, $tags, $link, AzureCostManagementAndBilling)
+!endprocedure

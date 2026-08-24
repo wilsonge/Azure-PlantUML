@@ -1,11 +1,17 @@
 sprite $AzureSqlElasticPool [70x70/16z] {
-hTW7ZWCX38NX1JyRvjt_lbjch0HPA6jP_5lIl_G4pzT_WSHNeOYGE86GE84uKqS2KqOy743A31X23OcXY1ZGVmFCcG8oki2JFWAJHQXDrEvKcZ8mIOIcqbkN
--n-CWKaYDFoclm5m9S-0Y-AvacV0pmgHHVPAdb5-KBACCgCGUIGgMKQPLOWi4fKSeymf7d88QGfFZSmmobtN7B_DYxkmGGffG8obT8jSfY8GsEI-OI8GiR4m
-4P4kU9A-StGvtLvCGAm9z0ve86EpTUWJUgSp0U50x-BdWP6nI-Mv7aWJfQUEl1Me0lV_hVASvF-uCiP5MTegQrmOPLbvfpoXy8oY9nGzyEZwarHKmWkcgCGN
-RrdPlv7mIg_FJwBE1V7q_T5cVysB-_pqCHaGPqhfeK_C73Fd67FIAtq9c7Ivws9R9CDOmwi65hyShJUOZM66ret5Bsg3GkwW20fEhppEhu8yP1GSN1sUNwcU
-NpLxs2krGI0gjQ4aAiK1QM9fbeUrQoZkR5oE79q-wmmEJ-Lr1eUtLjGPdDkAKmy1AOOCyWC
+tTZ94beX48NXWXw0i-7ztpQ8NU6M5qsBlSg_nVgScVg_mgZ_6X30m0f1W104246040GuH08OR3f4X9XcWja9KXEnHQb-ps2cYKHq9499yIq3KuI9QPI9HV4b
+0qlvaGW_Kdp7O2chfS2Fx1K_W_UAdu57WGDnAF0WUyNBmA_0WJWKE14KlbJWOd1F5wA0Xy6sMcODsno8fn04s2CgF19js5TilC2w8uqpMqGLzsIDPtrbO6aY
+bXbpOjogATkuSCwmNX0KeUV3c38hRhKnJXCPumnS6Io5RMOJvgqonyLcFroPxM_rlRB2gYD2mV-dn7owlV-kz4U_AltPRyhjtoZyDscVvpukR__KQ4LdPMTS
+nokiw5dgdF7EtbL7jVgGFICfqomdSI2p3RBsKXl6kyBcH5f6IYdh1d4noi8qO-5N9Nhd4RyBidnAuEumVgSQlsksFYlTsoUb-tkl79oo-58zFgor8Ze9BUtq
+u6Yr5dk8ZJ-L-tCZVYRwvkISYRnHEi-5_04
 }
 
 AzureEntityColoring(AzureSqlElasticPool)
 !define AzureSqlElasticPool(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSqlElasticPool, AzureSqlElasticPool)
 !define AzureSqlElasticPool(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSqlElasticPool, AzureSqlElasticPool)
+!procedure AzureSqlElasticPool($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSqlElasticPool, $stereo=AzureSqlElasticPool, $tags, $link)
+ !endprocedure
+!procedure AzureSqlElasticPool($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSqlElasticPool, $tags, $link, AzureSqlElasticPool)
+!endprocedure

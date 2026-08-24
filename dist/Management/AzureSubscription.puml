@@ -1,10 +1,15 @@
 sprite $AzureSubscription [70x70/16z] {
-pTS5SiL038DXo_BU_yZ5p5FHwwvA_s3e2rEq0Sb4UB6USnpKhNGGHGTHD12JWOuhUChWrO9vncXBdjFM721yEo8FaFUAc3doNfapA1LNMMAEhrYK4ZD0UAKj
-4JD4-AwlCHJIE1k6Cbe6qPGoDamqLQjmjayGicFOx92GMagLQXJUMX_7WGBkjcMkzEsFIr3LXt7oWiBsk5mCeok7IlJrUtHDOEpYDY4M4vFIHCJqYCyW74Q8
-mGWn62468yHWXFWCuYWJaQ8o34LPYZfNrgAo5FMFbB0L_-WAyHLyXr85Lwcdu2XrAqwgghLAfQC8iHGXle9lKUWgOdob-DUAW-WlHyLPS1057n6pQbKuOJrL
-uGKXJfWXzm
+tT0tTk0m40JHe7isdVkVTkLBRXu9iEKheSM7wSFgBbSdbH-A6DiK8fGX527qBq6uzNNarLE0l68IfA-SZMbuivf7XTOHkghuLHhURI6o9BjRzYO3yQfDPY16
+PnUXTGPaR94HoDoQSe98Ymg8QsfD0L7HDcEHQqmhQz5Pcuhdf7EbHJM7tqUTAzvHv35980VfD9280OaOa8W1YPXUBKCeGoX3A4CeGoX3A4CeHb1oHY63KZKm
+eU9lNej5pXIGN77_4CLtPOfbNsTiLvb-bD8KAFs356SA_JcbhYgEaSuGoX2g1-2k3ggdEWeaQn6v0G
 }
 
 AzureEntityColoring(AzureSubscription)
 !define AzureSubscription(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSubscription, AzureSubscription)
 !define AzureSubscription(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSubscription, AzureSubscription)
+!procedure AzureSubscription($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSubscription, $stereo=AzureSubscription, $tags, $link)
+ !endprocedure
+!procedure AzureSubscription($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSubscription, $tags, $link, AzureSubscription)
+!endprocedure

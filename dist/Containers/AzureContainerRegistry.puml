@@ -1,12 +1,16 @@
 sprite $AzureContainerRegistry [70x70/16z] {
-xPS7akiW44G70TEDm_sl-mjDgK098Rm_xzkyDa_T10Vvk_d6-H2YQWnX6bO4i80u98hSebvkui43r7qOnC2TECfJWlG2Dl2VIepfqpg6TE1vHHpeCzGfy1gL
-AzY3QvySPHUXUVXwmVXyN2-s0s_X3YMyoVGL4aRNscZz86n4shFd9srlFfykm2IIBnoGrjIJZBQ3NiH5g9VyavlREgF4V1S0AJ5EafkbcaN3PXcNno5RCWWo
-ItUbN4kIhnG1jImfezEw6IGJ6X9QcMWMLHjgcsLI9jDcYpOj3gh5aWFDO-6hPZaSBYmnhYnGrCq2RVvvqr8ICLWpYaWQiK1XWSf23rbq2MJd4kCMLIwRA8vR
-x5VEpJwrv4IKhx5ehoMHvnP_QR7JQ10uj0ZQ5aM6J8KZYsjQPXxlz_lrI9MAMul42ylZLNYmg0XM5a73mkSyE3qUp-VBU9PGjKLuPf60z7mc8CrabvcgVbmi
-WiSHIJB1bgXWiIoKgIX6JCSM5m3LIbExZAmgp_T75WSeeba0xbNPzQXVaayuiaHTdu3PjT9Hr-zOd5UUM7XmZigYKxQugT2sBE7Cqg33eledMRYpV5liJ8vR
-oWxkiEZEGWkm0Br-o-uYAijwF16zapwymYpR4-Za5W6r1T4QtCRfRA5QWs6yDVZ9_
+xTG7bjim38JXL09Wc_lVDf7UH7I1JLf8t_tTYxwdGXB_Tk_faU1aeZS5TkEgCCAY1eiYB8gmACAY2WiYB8gmtwFeMa62JOYO8gfnHbyjYB0embma3gajtDJx
+5YERfa01rEx3s9DPNm3aVPF7pCAEK35p_hwc05GOuFrXoQ3YGrHcY9HTIQAEiwRqWgzKKZ9JlOSM5DLh9IKTbowcZ1twGkwC8acC0ORJIh9ZZn1ID1rx55QK
+UnHH-DPoN54pp9NKE0Cqe5pF8n5NmNF5AhRgnh0JobPlMxMMGUcjWedIw-XQ4brLMjrg9UTIF8eAcRpVhbyDg5iTABRttJeaKgPZmSjkO5GOTsj8LD2VAQqD
+vTfYsS2UA5_BheZeGmf7lf8pg706Y3fJ41XvYb3nrXTr5BQiS6KG6OhVLE7R_qtH_qJXMrMrY3AQAxqwYjfDc2S_534dl52PxC2YuW01HR0LKF2h-mO
 }
 
 AzureEntityColoring(AzureContainerRegistry)
 !define AzureContainerRegistry(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureContainerRegistry, AzureContainerRegistry)
 !define AzureContainerRegistry(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureContainerRegistry, AzureContainerRegistry)
+!procedure AzureContainerRegistry($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureContainerRegistry, $stereo=AzureContainerRegistry, $tags, $link)
+ !endprocedure
+!procedure AzureContainerRegistry($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureContainerRegistry, $tags, $link, AzureContainerRegistry)
+!endprocedure

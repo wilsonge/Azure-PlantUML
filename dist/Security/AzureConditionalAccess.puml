@@ -1,11 +1,16 @@
 sprite $AzureConditionalAccess [70x70/16z] {
-xTS7ZYGX38LXWZ6sxt_V3SXYPV5ANNWKDlqA4_iJeGEKFwNEOYlXdYGgMuXh0d73z4V-xRWrclu4PEvaJUnkECD-v4PmwBr1OcOwZ_GdtT_DPLWOo34SfLeU
-wqHZYjfAvqFxxpoejsC4veL5HOdQh-gvdAeg0WGWYU__E9Hvcm15vtNwMc4UW_bh2fF7Nr06xKPQSSHBAkoZS8npYZzsUobbEBAPaL7M0mEPLS8Q9HH_N33v
-XIAnfSXkAHB3od_5JiMYCVpPx_cFVALmwxXvfpJa4F6jqW12jsDn9nYV509AP0Wf59MEbHQCK-bHQKXPEOALMc9cYfMs3AIeMIanULReKPdWt8CL2asuHRiQ
-fiHX85XHNvQG88Kyh4Wv8ZFTCHh8KdItzpcaGGa3mOe290o6mq2W0i-RSJ0S4AIOQO5rsupmWB64LO69Coyoc-MXzbhnuoLkl6BYVF9p-d0zgMhs1f4IGcVm
-puYM3_N0OCHQoJ0OoJC64SmyXn7CP12yKpXjTrTOqFKbjYf4ocrYHpDtkOzHoTI3eRNagX9casw4sQHhiWPIonVhghtyINq7
+rTQ7YiCm48HXS5PhhGBM-p_jDHtEc0ncDRxwqr8_naxj_wK6NIAm2qQyfJ83gEjU9KuAsGrmyinz35cVYhpJ6Xa2SqwX1i4GCWVZoE6ayceG1fI8g9K8HAhn
+5bNMwOWIyqga5VTItAyfRf_v1QNONX4LH3Z35NuufH0chpoUEnn9AN1MVO2YKk2AfjXRvDfbnHDAFURsLjtxKEenzcaKb9_UylkAZ_TzsRFtYayfljnuwunI
+beKvPZwdCCO4PJXeY0eofYiB69g2ZkMKhRKWod3Cg1AjRVqOKn3X2ldFm1KR4QLH9L318Lm9K829HmM7O1wF0C4ngE0GhhISOX1LjauPL6v65Jw5AxuORoN8
+oHWUcKAPN8ZeIWD5Pm3H6KIuqbB8rdK6JuhC828m7D4PZd3cl9vBG5W2mX8GLWAHcUYptP-HhGkHer4YY18nf0WYE_q_zGe
 }
 
 AzureEntityColoring(AzureConditionalAccess)
 !define AzureConditionalAccess(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureConditionalAccess, AzureConditionalAccess)
 !define AzureConditionalAccess(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureConditionalAccess, AzureConditionalAccess)
+!procedure AzureConditionalAccess($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureConditionalAccess, $stereo=AzureConditionalAccess, $tags, $link)
+ !endprocedure
+!procedure AzureConditionalAccess($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureConditionalAccess, $tags, $link, AzureConditionalAccess)
+!endprocedure

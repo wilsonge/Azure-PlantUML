@@ -1,13 +1,17 @@
 sprite $AzureAutomation [70x70/16z] {
-fPRPelCW20O_G53F-x_llwGr4KivjfchhkEWNO8SUO8xbFg4SOCwAFWUhYVt1XhmhO7kZqHFmG5Vq1S3gRm0W9BDBEv9EooHH6gbv4Hc3xr98JcUeFHObHuE
-UQGKMOcEpQyyF8SYJ4bFdsfC2II19fTeMR0wWuKQKnRKFui5IL92INnCMoarJibZB96ub3GctTcg22Y_fMYIaiJa4WLsOdGtnTDcAXS7WMkRKCImav2tC02Q
-DHKnwb_Z98A3MIC8gNC9V0eEN8qXGje5BoaKJSq8KBUC-4qviMn_IUnzYY0-0XEQ5MMC6wTWnjhC-9tcG-4GdqAOAMsX5XuFEiYbC1pKNYcH1T0BmSAsHVI2
-LypgZgL2SspB8fkIVA9DIMunpP2sPyab55d0MZz8AS6dRbmUE54rBHEB13LGn5ybdfvO91nyYMOi_04gNk9_6GAuNvmnl4Z4lIYYzPD68yLBQ7fDHO1Vfxsa
-bB7GGE1mCRv6BsYKk7K2h4yq0TX9fFK9GmnrJtKIhjr32D6-O3hWKlkA9YapEd2Zv34MfNY9ntPIcfD4q7QAbtXiFyLBFBIH4ahoOmfIGabkaI0baDWlXoG_
-9rrH7f8VHnC0siTTGu1S3Y2G6EDWU0mXt8VZyJMKxa9meSr9F7pkro61pPRYmnLleV6QGmAPBOnFUKY0QQIEJv6dP1v9yI4q990R0vKX0Vht0sd1mB9FM0u5
-7sZ17VG9Slu2
+hTDdMiGm38JX7owoGfdxdvPEjF84HJZvwDZxFaDPXCblk9BSmSZTIhr5aNNaJgL-LHv2c1mfhL3JLNuKAuMZc_GWEPrIxI8dU-xBoiXl4U9hZ5XPH6gjnRsv
+qoJIwbIN1MP6MeWWEKLMb2HYPQRq9IM9n4odt-oAKdsCP9X6I4OPlddAV8xZ94QGOuQhJl6D109602IK64ao_fmHliM43yqXxS-BT11E2MuV4po5LkS28GjA
+RO-jAcXHlKjAQIVr5OMHLBSWFLP6hZIoFWN3Ylv_fGSEM57iZQ7EtZkPWZbL7LylgdROvoawzdkUCCKwdaAN4imI0kKxX2GLwmmPI38HeZ5YZKT4gQGYko5w
+q7-d33qifNIFSAafX52PAOHGYIcCSAafZCJAHbC8MTdICyW6OhRzHNMJBqGszI-0-nhSPg7z8BvNVAPspIB6dipUW4N6p00x0b8iHgmDCAMIaiwG3hnUGV23
+0AGi8DSLVFLgoEio0boP0gIKV4da7G
 }
 
 AzureEntityColoring(AzureAutomation)
 !define AzureAutomation(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureAutomation, AzureAutomation)
 !define AzureAutomation(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureAutomation, AzureAutomation)
+!procedure AzureAutomation($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureAutomation, $stereo=AzureAutomation, $tags, $link)
+ !endprocedure
+!procedure AzureAutomation($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureAutomation, $tags, $link, AzureAutomation)
+!endprocedure

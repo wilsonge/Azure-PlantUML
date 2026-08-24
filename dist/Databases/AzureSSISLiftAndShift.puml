@@ -1,12 +1,18 @@
 sprite $AzureSSISLiftAndShift [70x70/16z] {
-xTNNWgmm281X206YYU__kkVWni5Tfk2Mk_ctb_d46dWK7i4tmiTzbuZbYLA8g7hqlr9IpY5GVPHBJur8H2Wm0Pb6ndcCr5nd9YebgH3k_P62uR3m_rIrjQQg
-minXZw9IFp4iROar5JuZ51GXdD5PYEbXO5cZqYk-Tffl34k_ftJ5KrH5sWrhhOamuIdkzvM-LinMUt-WM5eIHE7U7ocpLSfpGhhrKF4MyPlNAyIjMnd5MzUc
-ijTMgtjNbC_rq7UKoFp-BEzPthEyPtdFCiPFPndRRE1tPp72Q_YjMRQlwVLPnXPRKqf4kX00bDhcZzUK3wGJt5AV9glqpH8uHxki5vGTOVZIPb5Q6N4Ig_W-
-PPJRWKJSFrls7TiVIbBfSt8KLG8WtRFPRCYMLEn_XsrQpugMZs56Kh5HD2esdUzIIg4xoZnDDQ7Cmm909FEbY5XLbOd0jY0N5FG1u3PFK9Apk19doHyNOUPY
-oWvULMGg5hbouHoDUQ7Na-BNomPPnQzTLtZkq7BbFbgEEmWyFj_gdBgd6KB7hR57hvI--L4yrJ_ZI-fPDpWYvqSchhddheB7OpvrF6n1YSDOhO25qhTxUqbh
-TZsQardZGBowF572-dgS_1XMNVFhj1_iMAcwt9rbKQQgDsWXU1KMOj6sfyAL2i8CgOeGmfV-0G
+xPM9jgGW34G9aI22u___xSJ1OzVfw2FEljstBtrFfMJPBY1Bs1v07_DD2iJjY96P9u0vHfVeDF1q1xzC7pkCmehkDU0OmVSQa8o9eB6IEFdW7sg9xnCb4Sav
+pplwLKJI-qJHM0gX9kMvN33dX4yf6KjBvs8HC5Yo1kd4QYor9Zg8APS3cuM9JacpMMej14o2GsaraZG48BNM2ukI8Zb9LR5PQcTc6XEbAZTPV2BEzU2o5s39
+Cfq70UnqARKppeAslLPbBejIaVjUB0jI3SRYbY2_9ii_sqlxDthvlrx-hvVMsZVsqjQ3jdxTUkaAvAkoh8QdlM0Gv66MGrA4AL3a6JJ-zT8bImmd0XPdbjw9
+18Ix6Ink2K9TCyw2y-JmJXnR5c1LMb28zayT_IvrpI0B3iGXKCvPlqpv2wAQ2XRFG4i8OGAB4lNR1rbwjSQYtmOOgRa6iXOOQPYbMoWmItyfARifCOU2bd6M
+GAy0uSnZBFuiEtnaMT3YxqLIIhqRqulx6NMcbsNTURHUqCBTafwktHW22LXWxGxM2rhcleye06b5YsjFJz-mf-5yONk-VFinHHKbYlVSBT1AjhU0-mwOOsya
+DojHtFTHwybGWZWroAVjWc-xfv6xB5Qp3RYGBDl1ZU8p
 }
 
 AzureEntityColoring(AzureSSISLiftAndShift)
 !define AzureSSISLiftAndShift(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSSISLiftAndShift, AzureSSISLiftAndShift)
 !define AzureSSISLiftAndShift(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSSISLiftAndShift, AzureSSISLiftAndShift)
+!procedure AzureSSISLiftAndShift($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSSISLiftAndShift, $stereo=AzureSSISLiftAndShift, $tags, $link)
+ !endprocedure
+!procedure AzureSSISLiftAndShift($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSSISLiftAndShift, $tags, $link, AzureSSISLiftAndShift)
+!endprocedure

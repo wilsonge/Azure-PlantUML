@@ -1,8 +1,14 @@
 sprite $AzureQueueStorage [70x70/16z] {
-xTG5aiCm38LXqvEIlVzzmoHjoQDozG-6lf3jK9Vd9PXA4u8_OnYLngeqez9QbRPMSSKLRepngC3SToif72lZddWeOIWVAwUKg1V04aK5A5dqYqgkLMXEAKHQ
-8L8ApJr3WLJmJCMLyeQAAtYqGbQ5FaHnXUUKmgmLPgNmt0EK8XGmSpuY0yjo8a4gXjvIWLN1_3UCvJ2MigaOwlAy7W
+xSo50S9044HHiZOu_LSRjnFSON_qx1sko_FMTzOZz-QAAwxetVssGejvqimKiqZhcAPOSaeHADJC1Acgq3pMFbUOPbUWM5-acCMAcN2GzLshkCAkk38atwxO
+PobwWs9VgA1HO43pH0gGA8YKxXmwfU-iWeo2voWIA0g0vmW3i43HGBcZSuehXxkHw_Ay2W
 }
 
 AzureEntityColoring(AzureQueueStorage)
 !define AzureQueueStorage(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureQueueStorage, AzureQueueStorage)
 !define AzureQueueStorage(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureQueueStorage, AzureQueueStorage)
+!procedure AzureQueueStorage($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureQueueStorage, $stereo=AzureQueueStorage, $tags, $link)
+ !endprocedure
+!procedure AzureQueueStorage($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureQueueStorage, $tags, $link, AzureQueueStorage)
+!endprocedure

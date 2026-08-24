@@ -1,11 +1,15 @@
 sprite $AzureVirtualDesktopApplicationGroup [70x70/16z] {
-rTDNOgOm30JWSPKrsljVDpqnFsi8Gbk_5wh7LVXFvDAw3798RoNZXbI5Er8JNDhWqcYE39wuc5ELfxH6CYOjE2UyH71cyAAHS2GfBzEZcAnqq8mbfOj6rcGQ
-ozrn4yTvTPpZmbjAO6KdZSzdFwV4hPu_LDR5RUTMcYcF7p8-v8FRhRuOYZzb3aOYAO8F6adH-JgGylcXnL8QtcWiHUSE1LAObYLKpqzTNHPJPL35YsuxizU3
-svsE5s8xSmKERdS4BpIQCl22qHJz9IdyrrBqbwpB-2Lx9D5J9_Fi1ZIygD6nLBoAhWlUZ5ZAm9iMIsdpTI3bymCZASG7YQJq-JwGal2ftq_f-99iI_A7Pcrn
-AykXXAgWOujs2_6Ws2q5ZzgzQjuJSnFyJCr9iP1eBanOoUQIiPRKCPs4Gn9PsAdQ9HNdyh1lZOnl5Tef5bpI7EVrHEgq9NQuvCuVE-mPVgc93AKPTOYqXF_3
-Cm
+tT87SiCW44RXM83BBYFkVzfqvXzlr5_wSz5E-oG1xOzaTr51GK8nG-qma7Ep7d3SZ3Es8uGeX2Y4A8o8uGf2548KGjGdAn6v3EyLottCLlfuYSoqSdfuBzdG
+ny6Incd5TYadk-zJbP4fenu5AFRh5AUAlodXawPEdPS-9lFmULLmaugUnIUVnKCsgMXTNElYMXUF_JBb1XGnpfNRFrXTVkhoj4ARLZ9u5hWkZIhjroaZKyRs
+5bFQYfBtA94PbfKX8jFA9VLJfwEcCLs2ei3fLqnH2548KHZXYaA8GeX2Y6A8GePYY4A6ghvORJtWj3svVwIgj_rvVS_ho-ZjR_G4
 }
 
 AzureEntityColoring(AzureVirtualDesktopApplicationGroup)
 !define AzureVirtualDesktopApplicationGroup(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualDesktopApplicationGroup, AzureVirtualDesktopApplicationGroup)
 !define AzureVirtualDesktopApplicationGroup(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualDesktopApplicationGroup, AzureVirtualDesktopApplicationGroup)
+!procedure AzureVirtualDesktopApplicationGroup($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualDesktopApplicationGroup, $stereo=AzureVirtualDesktopApplicationGroup, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualDesktopApplicationGroup($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualDesktopApplicationGroup, $tags, $link, AzureVirtualDesktopApplicationGroup)
+!endprocedure

@@ -1,11 +1,17 @@
 sprite $AzureCostManagement [70x70/16z] {
-xPRd5bin28EPmdt_1-xqQSQD3Dtp-tiv30dYoC_cFtf0PZZg25nwibfIEb0386UYHiHPrXgYtoXABuszYey8r0Nx8ccJP8SmlAuOczI5G6Garb6NUIzZjvLl
-XcBiDeYdRe7n1djzCTQqCWFJ0metCpKB9belBUmk81g1XrPwUqv6ahHfj94MUskpaAwiOJHLOej-2xQiupdnPRZjtax1pudBRzKInmDIyea9d8VrzkcFfnsF
-n34x9pI_pnRepya6ZuLwDit4yELod6p2-06CWxue2dIM1irp2DV1qvdzHY1lcPnRNQjb__4XiVMnm1gmqu1_mngWD1HxEHVZRW2ZMKneduLm4_sSfcWlAHjb
-5MwQEGsyhKBmQR4zOd4XDugw8c8gGWKisH2thtzpZDSwh5CyNr7J2d4RTl_0Bkh1ZNozC1aU4RbJK9U9smJcCdUx9-GAwReYadoH2-osmI_DvHNS1NxBLumB
-62DfkTl6Rvd1LaBN5RanS3lDl8ZBysOQbyTkC-iuU3C2SaJN9CcI1bk392OTYdOSbG7gSS1L_WNU0G
+xTI5jW8n30JGnfTZ_V-lHGj5Dc6Uwpp1BzFJTFidvpzH1ZVgl8E1E07c4vI0yuuAZfYm-akOjJThsuVYCVwIAjmECRnCh8MEYWRCnCkw18w47H26z-cszEqU
+1Qp4Am8XBsVozJ0rOl52gH4NQfT8ojIAJYFTgAU8JQ1e0qqjgKUO439xaHt3fhCNSQxKeqzphooIF5yGupCJkK81Cr4SPaMLg9Gc3Z2vecr4350Y2xLBMEj6
+DqerkoGEAVcQXcElKiBerh5QoHsvWRnGwhYfj15EbIMU_yJPMNzzq_SC4XrBMjRIKMKPLvXKoPc8UP_pBhsdZ2bJemip9ZaI9576Tyio8kqGIggaZ8-zzUC3
+7cEN87cPy-OIpqEPL46OYKIDz00OMNkJJYFRRPkBeMbaLVAX2LFHVNnPJoyKFFqzc0uhOUQfWZ8-1YL7SWOyXRc2Nn5wpk1T-WiKgyuophY8uiXGDiXVhVGD
+d5u5HZv1wJ1IvnqGoEb_8Ji
 }
 
 AzureEntityColoring(AzureCostManagement)
 !define AzureCostManagement(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCostManagement, AzureCostManagement)
 !define AzureCostManagement(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCostManagement, AzureCostManagement)
+!procedure AzureCostManagement($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCostManagement, $stereo=AzureCostManagement, $tags, $link)
+ !endprocedure
+!procedure AzureCostManagement($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCostManagement, $tags, $link, AzureCostManagement)
+!endprocedure

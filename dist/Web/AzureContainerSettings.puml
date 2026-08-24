@@ -1,10 +1,16 @@
 sprite $AzureContainerSettings [70x70/16z] {
-xTPbcW9138JXYhJF_Q-BGvE5m6JTll-yJmN7T-g__qXhA_9MelVUTXLz4t5GXe7Yn5J24AKpCSQoKwwh6YJwM9OnfZAXm8hUbt6wwAQQrgxOATqgFkIlS1G7
-SbPOnOVeebnM3BF2AAvZbD5FAqBACChkaFs3magpokZleVJVfVmhzQrAJSBOnwcyLgaA4BEeC05INgKemEbOpba1ZIjLBaRAXmHSWqebw0KvbK0bf5XaCXnI
-r2AJYIW5agnoIYAAO2AsLKhBgfeon5FISwKm0CAkv2dvgQA0QDgbuYAPBqg_gp0upJn5Jqhh-yPBHI6-C4iu9QNliqe6kuPLPbhde8FIYApXXkiujUj56UeW
-tfPvsLG4AwSeRhlyeMCoY9_WNfmFbu7NAeJxIPdAHFoI0v4wYXF3YI9AXbT8OJXnH15uwRie25tafskPX4Tnw0tZHtn87iNumVtttnO
+xT1PgkKm38JXigLCSk3iVxUDt9V2WIWeTnxE_-wFiXxVgMVFp6pRDdqZqPNUMuYkl43jjSIeUFOQehNTbMD9WiQ-xutAM7w5cHD6vPZbLiGAkoJuVZSgKTSh
+p0ksH5_ZBHfN9BVOCASJrhWYhxHHyO_uFT8AEohDtaEnCwNzMEMfBCloDcNLMk0LNL-hB0AWL15ngowlKLO1wlI_UPuLaFlAMcXCSqzGrxH2H4V4cr2pIeXu
+a5jAFI1i0cue2-f4PKo1l59nXdWbfQopJdx6IE6VOcKJ00K0fa3Xc5YP0Eb7LGsHMQZOgLA7VyIANYiAFHM2msp61cM690mgdDC7KIabONYWGeZA3CqWtC8E
+YjJa5AN2Z9MQGsQ1Cm64j59mwcnTaHpIgsGESGkLMmn3oIWiKd1BgP5IxoY2Hy3ekoXusu_8I9g1An5Jaafn96GSgfvSLG4gWPFgyHKzU_OF
 }
 
 AzureEntityColoring(AzureContainerSettings)
 !define AzureContainerSettings(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureContainerSettings, AzureContainerSettings)
 !define AzureContainerSettings(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureContainerSettings, AzureContainerSettings)
+!procedure AzureContainerSettings($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureContainerSettings, $stereo=AzureContainerSettings, $tags, $link)
+ !endprocedure
+!procedure AzureContainerSettings($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureContainerSettings, $tags, $link, AzureContainerSettings)
+!endprocedure

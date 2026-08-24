@@ -1,12 +1,17 @@
 sprite $AzureVirtualDesktopHostPool [70x70/16z] {
-rT87aYKX281X90hi_QyxmOrjew-ThJJV0VuI4Bu9957h4TrK2E4B6bjCZ1iSaHwbBWUDs7ZOOOyjvzD6pGdsB1unsEdnK6-mqZmUyrK6FGuuGidZY9_kfDRB
-wnopW_zwy8yfbhh74ZtSh0kHnee_cyS8Fv0zcQb5hJF-mZrg3VxGnJ3u3_6ew8kdAE45sVunLYzaLezbwmCvOubzUIQCcH0k55V7-ioTS8FciQGUI8Ks4Pqh
-Nbz8MMJL4BDUNedk5MPbBB1PKI7um5M5HUa-Z9KLXW-Q4-L1XEPXXfuJXGzMLGRXQPYwOkD4TMLGkWnJLpfyY4rbZ3M6sLHyNnc4HsDJYGSL9j7_hX0Yi-uh
-hxPBX8XZpQ_sqjSLma_yINH_8rjLHcDKBftwlsXT8VoDVzEw8l21omhXlSAYLONXKr4XnA8oElSAGBLU8RpW2-ctvGuoR-ki8Z1WpeIM5SiP0WoHC-Uwef7L
-pnqixtfnQV6yK_W5iwBph-jPQV2RPYK4XsaXrLE6bZKVpvaNCZ-bU4nnzMaXzLE6o1KXxhaIS46v595B15UINo0mipncSETvoA7G8ez4Wmhc4OHQyuDn6YpP
-wM9hd8ymx67Fbph2InIv5GIFoCb_NMiQMGg58wZnOnAASAw9MVV83Ezcqk1xU0S
+rT5dilCm28NX6G7gu-n_jQbyvVfWaN3xw__FSApJBwc_AIfWGGAB6LZ023dD9tndz6SBhS5221P2i122XH3iavGUwdcaDe_naIP4sM5SfL2wHcMXk4Zbf77r
+cQCnwR_aG76GJF-8rQoLKlutS1Ogcp66anct3cr7fmYbWwnNjvLAQH7LvvGij42ohGpOmo97XfG2odWekq-OMTX2E9URCdRVNTadV2iJZYctwjYtK5Y4zcDC
+PNdBRXRVWC0jEklVc9YYitJCMcd7YivImrQK6Ox29DbHchU8AH6pjyXHYD9DOSvnXQ-6AYmveAYXYZglAsgeeiwh2b52XJc_fAW12aks5MH43L1q5Y2cKjTA
+SnKj7o_IFQXi0-f2fb86jftq6AF6gEG-Z4wseXLI1Nu8AC3WOn6C0GGKd4Km1XHWyDK9nW022fG9NXSLdy4jYFYCZo0JH-8A5aAm48A542o6O243Yo5OoC3c
+sfY-e4xq4Do5r4J2RqnjNBy9n4_j0W
 }
 
 AzureEntityColoring(AzureVirtualDesktopHostPool)
 !define AzureVirtualDesktopHostPool(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualDesktopHostPool, AzureVirtualDesktopHostPool)
 !define AzureVirtualDesktopHostPool(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualDesktopHostPool, AzureVirtualDesktopHostPool)
+!procedure AzureVirtualDesktopHostPool($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualDesktopHostPool, $stereo=AzureVirtualDesktopHostPool, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualDesktopHostPool($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualDesktopHostPool, $tags, $link, AzureVirtualDesktopHostPool)
+!endprocedure

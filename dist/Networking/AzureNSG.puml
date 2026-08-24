@@ -1,11 +1,16 @@
 sprite $AzureNSG [70x70/16z] {
-xPS7bkGm24IH32BS_xuJw8o5tk3DE_ulT_YgGewmOcCrHtc3OtIs5xX3dM4xHZc8L-51YCYVg1ThK85yQRp05yG-GFWog9yv45yirppojJ6tuTa9WyMvVDNM
-Wew-dWUPMgvVwy0-Kv6etM72nEBZkQD2Bn9yVEEAO0aUVQo8uU3GCOZSa5W28f_nHx1W2gViB7B4ed-9vRH8oca9d9RJikUqq54BXNkZf61Ak3TkHoqRF6Cc
-ce4PP0Olw17BC8tFWbgt-1Q5mPGj5CQo7anUo230UPXLeK3Fm-I5EaIacaMD8R2Qxp9AH3BDCagabInirc069Pga3y4SdMlcVGGIUcB9-nGwJOzQX8HidsP3
-OLZGTAAPI1IMTDjhzX9hi6RxrDWBmQBXe9s2GHCif7vLgMj27PVKDK6IrbdFvfWaQfuFDaqa-OP72vTVxdjiv9iZ3MeqkSUvjJ66EkIQgqN2Ms-zLMXJXZsE
-1o4u3fgJR71jo3RWHmcFEdFU0G
+xTStbiGm30FGHWbqeVkVTdE45dmYDyyOglqVI5QUJknjZfcABKaQd2E5Z5PBAVq-q7Lyf9N7zCSCpUWUlPJtodEVW85QI7a8hLb-JqL8wV0kPk_IQn7AythO
+OWKFTo65740gQAqHG0fPOs1LYaoNMHHa5B0oVaavbQ5UH1agVrSvbLCv5VmXnOQCzcrLe5vC4T5A9MMcb7Q7a8AuWbMnk6Ai7Cv8pa2OssLs1_Alv5zeTxzU
+bVqoWIhEPW9LeafVg_YCd4Sfjgj0_-RiAuEhQ4OhpKFcyI7ZB2MmcXLvLHo6deFupBiG0eNuZ6WIP0GIP0GIP888CwmqZMY6bQ4HpL2N2etu35wLPeH46Pec
+wL2H95EfICwX8ddcc9_CLf5R
 }
 
 AzureEntityColoring(AzureNSG)
 !define AzureNSG(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNSG, AzureNSG)
 !define AzureNSG(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNSG, AzureNSG)
+!procedure AzureNSG($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNSG, $stereo=AzureNSG, $tags, $link)
+ !endprocedure
+!procedure AzureNSG($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureNSG, $tags, $link, AzureNSG)
+!endprocedure

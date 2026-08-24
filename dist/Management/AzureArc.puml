@@ -1,11 +1,17 @@
 sprite $AzureArc [70x70/16z] {
-xTK7aYCX341HWIAqxt_UfKp9RTB0R4x_0A-a3W2_jl_z3oCS5Y8iYgBAXqOfm2pMPmJROcqo3gadk3UySPax2Pjbl6Qj8Dh5kq56XtLCyCpmjL1qciHncLKW
-kepsWtZPLauoQ4B4EO58EUUvaVEW4EBKeABC7BkkcLB27Y5o9ITfa7mj57UQGLmfMMki5MPiZQfujx5HHD2N6PMSf1eRHKk2rMWKpvnOAwBFX9foqquHjOe8
-7oYvD2WiPewSACwytWSIgzKgSZQBbpnx8S9yEijQOVvcHPdE56zK2b7QArUZM4GMVSOK0oBTYfuhqFIxAlhRAABVGL5TADw18lhj2clj_0yO5LRxzFcI8hmL
-2_7fywLcgbGIAS9FFb_iScUbgEp_07iyV9wfebo_NTMFbLAgJX7qNV4bc4NtIYczlfSG8pvlvkPMsogrAss-ketYvJHLH0yLBwLUyK6E5EyIQ2BLfGAyK391
-5wsK2031Peh099uf2BMOUiK2J0ioAE5js4R92CkmLI8qoKkv63wCRWMXBrfL5BP9LN2wDYLxf0W7HIbAM0vBS1WYV6t_-zyN
+xTM7Si8m3CPnQYcMOtFe_T-s4KF1GuaAtUt_PWU_-ymm_ANzznyH8Riw00GJaTXHW102M8RF2TS0J4EQzmwpndSXDUqEqGxL49yJe5KW68Pvh9SmZdacisw8
+4S0XaLdYAWXcaBDbvDme08Q1c7CU7YhdJa5461Zo-oobpYYbLm073g2KS-_CPMcuHMeDLIGraXZc5fmcQ0nHj7arx2sYH49zGYf5ZrKqSmijHP0XZQAfOMw9
+T2uYEfGytX8fNP0ukHIfPeH8DuJSYZHVIzePyMwncCMOfaUtg1Ad9UUMdhaPA8flYzHleOXB-rjAhN2b04gwnQzK0Ro7ylvRw5ssq3jiYVGEMuYsbUpPGiyf
+QhYLB7LR8gKttY-Dav8GxtY_n7UxN-9Jzmj5nyrmF6uUIHuh2j6Eeawt9KxwhUPGZgemhypwtYLoA9BvtXN3gKZ6UpUIKr6dKsI8Nz4vNAM6Jz6uYZOKPalX
+BalXSoE5XuqKlbLQvSH6s2byLwtmHhN2JQeKtcbLkEzqKTZHLU5XYyA-ogBmW_tttoi
 }
 
 AzureEntityColoring(AzureArc)
 !define AzureArc(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureArc, AzureArc)
 !define AzureArc(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureArc, AzureArc)
+!procedure AzureArc($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureArc, $stereo=AzureArc, $tags, $link)
+ !endprocedure
+!procedure AzureArc($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureArc, $tags, $link, AzureArc)
+!endprocedure

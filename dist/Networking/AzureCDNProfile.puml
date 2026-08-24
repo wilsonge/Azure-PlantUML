@@ -1,9 +1,14 @@
 sprite $AzureCDNProfile [70x70/16z] {
-xT67SKGX38HXPGdttw-p3HSvzjuacw-0Vs15_zIsRSnCJr7po0zX0ZSY1w5uOnIqpF9IC1uP2Qtml85NDiaEp-HjZeo2JyFPmOzXpxjeJZnhGkUtgRdPbxmU
-4NH1z9TbFIIlBDdroEemiXBfN6wy9Mf9CWtKljKgdPu7lLKDy9KBWNzev4IYWom8MOmA8t54nVoqqY0XHrIAY0S1LqRQ84cd6iJfb3U4qZUMBmtnqyZMmH-o
-zWmweYBqZHlEw1VR8A58jpnsATsXsLxcKcb6rFmECw4_QjksDm
+xT1L6aCn24JXEaoD_Q-sRjGxT-gSV7dz4uZ_hAegMzPKs4SJEGWGvZizCm5Z5wADd4On7j4h9a6CG3Z6_DQvhVXT2OnpIgz_aB7A6OHmA6GPpYi3Vx2pUt6d
+c9mJqKXEexX86QIS2nB5im87YEjPSN1fbD0eANoG4iqKGufJ840-Gmc54hi4o4ayaiFmdZ2C50V5RrPLrHm
 }
 
 AzureEntityColoring(AzureCDNProfile)
 !define AzureCDNProfile(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCDNProfile, AzureCDNProfile)
 !define AzureCDNProfile(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCDNProfile, AzureCDNProfile)
+!procedure AzureCDNProfile($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCDNProfile, $stereo=AzureCDNProfile, $tags, $link)
+ !endprocedure
+!procedure AzureCDNProfile($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCDNProfile, $tags, $link, AzureCDNProfile)
+!endprocedure

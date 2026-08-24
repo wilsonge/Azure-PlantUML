@@ -1,10 +1,16 @@
 sprite $AzureBatch [70x70/16z] {
-xT9PSiGW38JXba4joFtlEokCNYW7Y-pnLyNhFuiQFqXM7UDDnYJTgt2rmfzJuR4An-m9a-hGM_DzbUAHU2NX0oeQMx5NykrPSCLUWTGItPzN2aJMAYq3hgou
-7rch3SnNEXigpVTLw97vobPgfRaDaOgW57Za-8fhoq3iBddao8fhpnIxWnW3-wiDgzqniEB1ZOYTo7J5c4rtOK2qiovGSUzLsCnMw5JffYiRpJBT1WrK12Ju
-af0Og9W0yWmecI4CLKp0EuNe_J5dDrynjPuHA9as5xYH0fcCVHUlK1D7i4joHwVvOCNH2NIzic7jkwWecR1niG9L29bJVZbMQHa4zkBOCqfIixu4AdxbnHij
-LNIbuj8E_1Mdq-bqkW8
+xTO7SWGX34JH5g0MhDFzJ-i4PTPL4nYDi_a7U1j4qhNuqiDWdwlmvoWyfjXokJQgbCKkDxKVe3J4fKJv0CM__fgISYbsMX4f6Hl8c98bXFDAoG3FhE9IirHi
+8P9M6vsHBPPRFq391nInKjHw0Iu5sT2Hu-klL4OWzb9iY4l9qhwAY9bZ_PN6i5G6GTnAdn6nWGmhfj6EAvVBbTBIpHussrFO6bNOKsLlM14rI-m9N0f8yAs8
+w55CWAe49HC2NOerH4LK8SfqrRX2jSf014h6q7FCI854-hvBLvW2bzfMSbvQB-cWqhj217fU2OWyewWaCYBmb4A19iZoZCOL1U1OBxrtwqMJyoMzE6N_Z7wj
+ucyscyrcioS
 }
 
 AzureEntityColoring(AzureBatch)
 !define AzureBatch(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBatch, AzureBatch)
 !define AzureBatch(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBatch, AzureBatch)
+!procedure AzureBatch($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBatch, $stereo=AzureBatch, $tags, $link)
+ !endprocedure
+!procedure AzureBatch($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBatch, $tags, $link, AzureBatch)
+!endprocedure

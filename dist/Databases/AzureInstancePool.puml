@@ -1,12 +1,17 @@
 sprite $AzureInstancePool [70x70/16z] {
-xTS7cgqW38PXXIH_SexkVxjtGFFOed1xcs-gxLLWwl17bmMjX5f8ifvoGo7hINw7ygaaufBW8MqgWfuQoeWVeQIVeNmgYRYTj1JYdbeAToN_goBsZZBv6WNp
-z7xFKTAloFGY8fu2vUL8My4C-iWYnOMsOhCK1MTYUi7xzcSnND87HUQ9YUJq88eWlLTOFowQ6eWNARAcTWftQQZ4uJxjLl2K_b85-XYw5EZtAe2sQoZGhjAZ
-0ksBdXJjZGEbXU3oZA0KAnk2F9Q_HRBMf9u_ijOefUJFCqOApa-hfUnR2JwjmHnV7aNg9MbSpavrQtb_KPGk2dP7KCUrRcI_cYwAybdPFUQeNds4sbXtdnND
-HmMsLcxFjiJbXErJDYkAxTAZSlmhD2-RURi6LV4zMnmhjZmawV9fsYaKA7PGpBnrvfEQfGubnOexkMj4Hg5IGxa3wXdOJNIa89oNROwvlizMMbOwKYnKM5oH
-PT1avf_SAl2sfKl4LBxJrBySyl8TOAkIIsHhUgEiSNscqJT7TQMMRKqEYcuJMqgyhPT_7OPAFYWmJy42sm9l_yJf-QOs71LztLQPLvYS5DWzGtUC3JLqCNMb
-Kt0ykzB7n8TfS2LWUij3g41V_MaQFC8tEiZ3hfJFiK3LTkavi1D_N5y
+xTC7ckCW44HXYLJL2j_S_xPhQ1naGEhDQTu4M-a7fOy_EZ5bGFvfvLE18LufiFNtAfzAj9GCYg4B9TfA_wkIbhMNfAzHiE_RjlTATYNjMmmXzPH54Ol27U6M
+z1GLB8hiCIju9xO5slVCHT34hxqk6z69OoLotzRLWEHwIjAVH7aBezXJ1c4SpGhEuizHXWZFVcXImDCC2fw4cJ7Cmg3O4Rj2VgyoHe24SwTtEl1kcfmFkfJS
+T6kEkXISyotKGT9KOyxVbnpguio6QSy7PMWtg-BAWYjCgx1HG2tS3iWYGbtmTosqIcMEKsb6ctKA-ctkA79K8BKyV1GjthxZkJg9P4LUuq6XrCh5zVdOmp78
+fzHH92je575JBb2_kYj5NXLvL6-kuq6XNQanpfd9ok6CebdHofr5kQHuNkXqgk1mNPv3rujHohFZMAa_3oNYhYGzDkgrKc-WF7e-Bpx4Se6PiUSRC8igay-5
+AwKMynBc--9CLMgkhr2qUfnFkiXGbqKi2kGUKbIYXl2yo7mVT5cE2fTXiJ1Bju-Z0XapvQBAYM9ddFGGLMoCWA3q45LQnfuYBSElHrJfEtQZpu0Y1k8FxGi
 }
 
 AzureEntityColoring(AzureInstancePool)
 !define AzureInstancePool(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureInstancePool, AzureInstancePool)
 !define AzureInstancePool(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureInstancePool, AzureInstancePool)
+!procedure AzureInstancePool($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureInstancePool, $stereo=AzureInstancePool, $tags, $link)
+ !endprocedure
+!procedure AzureInstancePool($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureInstancePool, $tags, $link, AzureInstancePool)
+!endprocedure

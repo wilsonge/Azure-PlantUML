@@ -1,11 +1,16 @@
 sprite $AzureLabServices [70x70/16z] {
-vTT7bkCm30JGGeRkV-2Evfj7YuJWi9h-QxgCKYR-5c8rZozkIdWEMqmKZoEB4oCyXcE9yGYD3KMVnvRrGxAWwD4i2JeuBn0Q8YyOhbdcwyDG5hh3iEMrG87K
-iuVt6PvjMbmaVLvShdrHXVIL8NskL1sJFkVgnkdJvetJFrUIpulEAFqOphqusTsPMeJuoJc6hWfv9yNnBO-jy9F5QdmxAbba30A0Zj9SPxq4NrvEINp9LrCE
-V8ctfDXR6j6hAO5lUP5YyiDsAOPlUf62NxHBOVp8rrBmIxefUImeRkA5bCH0-NmAuvzifSIkp-37KaufvqMEcUv6KTpuUHZ3FVBrOufm8_SFc6Gia2_w233O
-tCcmm-evN_xJlunE6Iveyj5da6cs_bv0CB6883o2LX_z7k7e6ZyWt947joKs-hpIYKUVHSz0LtoXTdo_ps3jZPzK7_kH6MYWSY5dfZTtV5plvQJVf-YKrDaX
-CGhMw1JZoR8JurbPaACdKU6Z2INhZIBudtq2
+vTS5UiGm34HX1Mp99Tt_j8LPDYNkbFkNOT-dSEB_YrvZ6cH8g_W8Z3ReZXbREKrYUAjyjRsZz2aV0IB2Lt9q1EW6y0deDFXAiY7q8C1F0lGe9spa98_mdMG4
+VXIWHu6qFOeMhB1PYQKoa-WAe9BQjAnOAY7IausJOAW2julpoHNdAojR0VzX5T-gh0i4hY824rs1LaKTo8eV_O2Adn4LXtx6RhPHx4MWESfwdgKsZ6TQfwdf
+L5dAavHNtDMMPv6pa2-JGpLqTxCyGG2cqpBXl-vy5zMeM9wpvPqF58lS2CYCHe9auc16tqoIcL6XbkUyJDJo06OSMHwfcGShirI5eOUR80sApBw8Iiiqy70p
+IzEA3BCye3iorXi5WhrQlIU1nZPDqAzi--WAd_6_x0K
 }
 
 AzureEntityColoring(AzureLabServices)
 !define AzureLabServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLabServices, AzureLabServices)
 !define AzureLabServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLabServices, AzureLabServices)
+!procedure AzureLabServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLabServices, $stereo=AzureLabServices, $tags, $link)
+ !endprocedure
+!procedure AzureLabServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLabServices, $tags, $link, AzureLabServices)
+!endprocedure

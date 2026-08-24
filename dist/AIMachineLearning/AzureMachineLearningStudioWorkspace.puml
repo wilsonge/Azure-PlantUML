@@ -1,9 +1,15 @@
 sprite $AzureMachineLearningStudioWorkspace [70x70/16z] {
-xTL5WWCW38NXG9JU_y13nuELZ0jVDzKVtghmun4788mb3O6nh4EdmfvwmXwC9VRAnVbbbLCvbLF9wab3lJIfNDQ7NxpySoi97v0zYrUIzEn3AXfVnD8fuKg5
-tKNUNx7tL4u5Fg9IRbIO7cGFNP9WMCdfAhC8Ge2lFBNfeokdGgx2RxsAgxpnCb9bU92bIX378iBTgo3qfoU9RlA_yjKO5cqMiAfASC_WZrjKbK9xjC9HESC-
-wMyVtqHQGKyh3kxfvSWccHx9MgNDFJRzgfgPm8Pi5SO_x8zZc24pszX4LjquHA9xnbyWMBChfJafLX_hJLps6AoKNHaMh6o2bIIwGn1-Xpi
+xTO5baCn28LX8boext-t4wOZvNbIbsy1_-4UvV3mK8F78bBbCfNyBXNk40_iZLGoUwkr0_RIOrS-bK_bKu5uy5Wy35TqxO6zjQUFMy4l_LDVmG2zI4KkKbdL
+Lip08MTNz9pAfu9BL5OB7xgS79PJuC5A32OoWFRdCjDHViZAfm9NQSp0H3fAQCkiK33zOXJITagWNw7f646HoBHlWXIWKoocxXGJN2M8gOuayfAOoWYJQTpa
+ztXY6lPuKKn51EJKRz92Q9XeiJIYYOP5NPOHBK1ZU5b63OqJBNBz7Y-fMH1HoUDazMsoibgelU8zKENm7Bu
 }
 
 AzureEntityColoring(AzureMachineLearningStudioWorkspace)
 !define AzureMachineLearningStudioWorkspace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioWorkspace, AzureMachineLearningStudioWorkspace)
 !define AzureMachineLearningStudioWorkspace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioWorkspace, AzureMachineLearningStudioWorkspace)
+!procedure AzureMachineLearningStudioWorkspace($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMachineLearningStudioWorkspace, $stereo=AzureMachineLearningStudioWorkspace, $tags, $link)
+ !endprocedure
+!procedure AzureMachineLearningStudioWorkspace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMachineLearningStudioWorkspace, $tags, $link, AzureMachineLearningStudioWorkspace)
+!endprocedure

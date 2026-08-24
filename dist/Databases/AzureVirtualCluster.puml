@@ -1,11 +1,16 @@
 sprite $AzureVirtualCluster [70x70/16z] {
-vTK5SkGm441HsMuKtF-uozknCEeAPtxnm3E8mZVin6dd-ckyASJpGWZ8yyvWyQ9ZhLmVesZTM4cbAUjToQKj3PIK6RNKoPCICm5rNtTA5W1eBgXFIb80YAKg
--fMufQI4mFCdqY8epp-HzAyltjzkx5_-UAIrIZxPhFChCJSbyR-NM8IrrDqKBJmRezUVBuK18BrqxgO8WBvrfBqYfUHIbzPhEWz7Mfk4JPby_HhpvTChXCC0
-06bVmKNR2dqHXNmAvtw26hAjv4WK6mQHVGeLx9Saycie9BEcJwI8MgeYoxJDjnl5SYXr9E9M78ZrlCAoqL2Xc2pP2qovy5yfsV6biXc5MmV-gj3_-P9aEpug
-vU-iWp-AEEBsNWH0_Xx2dg1MfEJyzu7KanocL3k9g2ke54jzeIbqJzGLlugYOuNLbOmLKbVqAWfC55PFnqGXYVjXc2casuY6Nl4pPwVu6JN45F-xuH1cYYMw
-98Iki5OiPZx71MkbM67Pwokyw5KK2ji1Jhl28_OJ
+tTPLWjj0383X5_58dVkVjjpQSdPm8V27mPyPwWl6dGO_Joey-3aXpwM8fkHjfSGbrxFYuP4hRoZ56ILoSYZc21WvlLLS0C0ZfOTI500iKhQks9HYZj2P8mr6
+ZfnafR7uqjAzNVZ2MMciocVVThLupkIic3SsogHOA5laU7aTkG90l7TxSG80VQzI2W9rzgCWuF5-9D7OQPVsQHQz97bDwyJnvHMFkuJDQ5eXxFHo2gqfLE9I
+eOHCAMw4Tc4GUKsX802C7D97ACGYmlAhosjxZX3jUboKPWs5F58cgKabHoBlLrWsb3aaTrRgeMZvbybajqfn4O_VgKnNZ_1NGG2KrivKMI67VvT2igzWA83y
+GboNoih_arBHFIOVZcHR8JmUsmgTsrNe4nJULNAFfB3fmgsbaDf2tvAoozIaR38rAPjCxIeaDf7MXd8akZ0XMSdnppf2ZdhLsVXZb5vVhDH5vVNx0G
 }
 
 AzureEntityColoring(AzureVirtualCluster)
 !define AzureVirtualCluster(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualCluster, AzureVirtualCluster)
 !define AzureVirtualCluster(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualCluster, AzureVirtualCluster)
+!procedure AzureVirtualCluster($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualCluster, $stereo=AzureVirtualCluster, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualCluster($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualCluster, $tags, $link, AzureVirtualCluster)
+!endprocedure

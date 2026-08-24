@@ -1,8 +1,14 @@
 sprite $AzureNotificationHubs [70x70/16z] {
-xSotTKCn44N1jL3_7Uki35z4Uv5zJ05Zrt5u4Eus8g6O9GlAMGhRjfmbB3OiRkOx5ZLa6SaNDLhYFVOdj1ZWMX0jI6eXeeTHiNT9eiSi3JrVpXB0RIc-ZAAB
-6hgCFKldbaLDlcMMjQGYHgst_2tIP94cYtIIHJ8QB8-TvImzIz8ap8O_balQFkPQoe3IGgGMmjVNA8DQ2v5Q25zQY7IxjECR
+xSmtbiL024HHR2ja_wlzHWwDdnQLoBmwXDouJ7UcnUATAeAnSecKGYct8YG0XOaOeIHJKTvfNKac5UcBvkI38hGpBYaPHY65A2JcvcM5n5_15DT2vei2w0_b
+LgJGgXX4SOCeRW3b7KPnXIZ9Q5TlfMrc4sBDUpOgstnM-aeb6O3INFSexKigNb6o4ogt4W04fiJGzR6xgfBCC5zK6fO2mWI4YMgfb9c0C77fxfu
 }
 
 AzureEntityColoring(AzureNotificationHubs)
 !define AzureNotificationHubs(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureNotificationHubs, AzureNotificationHubs)
 !define AzureNotificationHubs(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureNotificationHubs, AzureNotificationHubs)
+!procedure AzureNotificationHubs($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureNotificationHubs, $stereo=AzureNotificationHubs, $tags, $link)
+ !endprocedure
+!procedure AzureNotificationHubs($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureNotificationHubs, $tags, $link, AzureNotificationHubs)
+!endprocedure

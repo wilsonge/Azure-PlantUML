@@ -1,12 +1,18 @@
 sprite $AzureVirtualDesktop [70x70/16z] {
-rPW7bjim44F5pY5v__D6JmLh8H8DfmVRY_yROCIw_2ToFeIOSaunUEz-2E5Z9aN_8IAalAcSEa0fVC2u4gueaUFJ5wBMQglMBr-Wv3zYMEi3wirqJZmPriPt
-QdPoeWInFcxLJS0aOamuwOdXTaXjOwfMTuoRLLBxUAD-O9uo8JTJLyY68UHcelQ0yLibW6WOpyaIHCIucsHjl55rhfxVsvOmZp-XEsLPLLuwHMDpywD0LhKJ
-itdYKao3B7Rn52ZQha527_V5H9IYGr1CH8CGhGv1mEdLaEaGAiQzPDj_03BwaIyCYH1IWQKRG-Q3AH1OsiOXZI1pAzi4o6WOavvZQHiS6FyC6HsKm8-SRQy2
-9bn-V8etShZTNrvdReAfAoRUjyX435EC2WqgnivMez4oXblD51t353ZICUm8wVuW1gCQdHOnZIaHGtfCC65SC9c7OvXD37XPkFviDyykHYE9ay1loireHAld
-47ZqzQxHY5U0p8OHfWOTmXC3JtOwX6Tlh2GwX5SINc1r22-nlC9s2S8hB1TJ2AALmZiF8uXO2k-2YWIfA0LAv2dOKFpaoHRpnpUPuSTsggnuILXADZuU0zgF
-RRqPOy8nO7QsSHc74k58mljkpgQqFc6q0ZjF2kg9ByoFi0S6768S4B_CvUBxat1ql_zK3ixaXe0Oqcr5_h7R2iW11ANWVkmI9yQqmbAACNWW_d5z0m
+rTY5ibin40FGoru8_F_N5ZnAFAvggmmQUg7pTWsNdlz9hYu_8sX94wNbUw4l09A-sp3p6hE18mtpoDix6MxDAGg1uN6ZX3TdZi2eLN3oxPm28OCSPXYnk4qJ
+XgwcIDv44imvHbmYw0hLiD9r8xk2maXfY69AOoIY6KRy9cBxPZV4AtEI8cUdhCkolfYaeJbhAH9PFcUD5uEU-b9S8pMj9oZSZqRsl74nkXGWQuTmCGUNef4s
+m8SeHI1zCJH14kb7fYdsdGXIMner5FiU0kbRWXBTPoiM5qqnxoOeF2nH__VwAczZX0U65LjgNioEboOLwpxQyBj0Vqsbs52vnOWH2ZudnXNZK7YYcOaXuzW3
+1okQuGL32Z7qaZhYqTMCdYFDn50fjmcpzo-lRgDsIYgblVPRIz9k51tXdRLyVJUUSfBQUyTcF4LdTvHIo6mReQMKo6nBqnvG2AzSFfDeP70cuMAI45qAb98A
+uLBQ374n5o6w52x6DS8dUxvgk3J2Lq5OlrrFcq9kZb9-yTMXPZJ28woJG5YXQbGbJM76TI7-2svAqXeoOo8dHZ3o_NTyLWWH3Xj56OY-4mOYek_Al-SfWtX2
+e7C2Ok4w__2J4uI8_oCV0G
 }
 
 AzureEntityColoring(AzureVirtualDesktop)
 !define AzureVirtualDesktop(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualDesktop, AzureVirtualDesktop)
 !define AzureVirtualDesktop(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualDesktop, AzureVirtualDesktop)
+!procedure AzureVirtualDesktop($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualDesktop, $stereo=AzureVirtualDesktop, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualDesktop($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualDesktop, $tags, $link, AzureVirtualDesktop)
+!endprocedure

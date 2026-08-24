@@ -1,12 +1,16 @@
 sprite $AzureStreamAnalyticsJob [70x70/16z] {
-xPM94gCm34Cjomx__ySxD2q6KTPqzZvUxqoYIB6XzelvZ-U3i6yYSkBs3I0dtsQ6-U9R0qred-3dG6SppcxpS0sav-kH6Ls2qa5a4Pj6SzorocjwGTyFndLP
-YyYEQCfw4s-ytAFfZljMljrCqweDVJFd90XCTs3qLXHMqnM8pegIWNjDO3S1i5ECSI2i1nulw5i1nnxhy12UGWSPjXfdS9B9hsRPWc35NveyXK9dXD2nfnqV
-Ey9D8ET7QPnr89b4QAvsU1sbCENLZ9uozHmDJWP9tyrOFyS9EyjGwbG1VNxcKCxHlUgqWrR4UnNV9a4QXax6f5JuLWNFlJIS7t_sAhMcZ6WVeaaqPKW7y8f0
-BNCDv11IwYF5Zbn6kWcY4LXjL0gf29T9Mg5TD_SOsoIdT4SkBweV953WwMwT19i0ZktxGoGZrXbNLcfibQ4f7Ai8fnmlJgNAYCVquH9zAO-5vAb5bJy9p7-V
-b4CLaKBT2vMI1p-GDZd2HU5spyzDnxNTO8B7A1lXnwqpIAg4cgawawnQMomTi0wEfKNCN0HiSRi0O4bqZ0kDfQSt4n-gXBqbTtObcOogYCfKytfgLRn6I-HI
-XdMr5dKFoHAvbWderQ5x8rH48Qp0LQ_2Fc4qtN4FtmNw1dQ1le6iGD-0Lw1l8IUmNy5_lW
+xT07RWD124PXbLdGglttFssQ2tfYHf3c_bANuCyekdAljbFNLxQ_KQBBAzpUe61SlhSb1OnLj-4LHF9mZKGafjC2wNP3YkPTGp7z1QEU8ckVmcOBdLEoeboj
+iFYZnaSnju-FBRvCTGCTPlRP5bzjWewndi4oCve8Iqm3YH4P9dHS0f4TAXdYwRaUav3vSr_18sVwQANWpM56EhHM3Zly9LSeM8B1nuuoWD0jbNn_66HKA5eW
+VaYV1U89EMzD48zmr-IGM4g7j1GfTYV_H4SBnCLbCOjnHY8933OvOvwLVBhub3BaYdPVT7WL42PadhF3gzpSmd3ZXzZaZfYQ-I8nKl5OfIAlgfNXtOeRcXL8
+juLoZMDCqymZFCHqpqYEjphZZjPnWGotTZ4Msrc9NEt83DNLYgwfaD5L5JAwHg_U0G
 }
 
 AzureEntityColoring(AzureStreamAnalyticsJob)
 !define AzureStreamAnalyticsJob(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureStreamAnalyticsJob, AzureStreamAnalyticsJob)
 !define AzureStreamAnalyticsJob(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureStreamAnalyticsJob, AzureStreamAnalyticsJob)
+!procedure AzureStreamAnalyticsJob($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureStreamAnalyticsJob, $stereo=AzureStreamAnalyticsJob, $tags, $link)
+ !endprocedure
+!procedure AzureStreamAnalyticsJob($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureStreamAnalyticsJob, $tags, $link, AzureStreamAnalyticsJob)
+!endprocedure

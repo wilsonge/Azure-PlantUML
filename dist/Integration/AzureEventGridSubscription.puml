@@ -1,9 +1,15 @@
 sprite $AzureEventGridSubscription [70x70/16z] {
-xTZNeeCm281X211gtl-1Zv4kjqXxLlFTyxidl5T3KZ6viLG4LTQW33qDswsqIXQtFAyaS4ilghHA8aguNq7OmWE44Nog45S4Mn8R6DaVDQ96s22S81gjM8Hm
-m5Vd8WdCDKEXo6ttHY864IqdZFx8c9IAOv5K3FeYIKOknR0lecDTCN8iGhT8FhKk5k5RH3RtYpzYyi5LuQK88WniT-Ef274lmOW_uhkUYVf8fegrpv5XrwM8
-kYX_UyKi7k6dIY23LW48PeWe0GGpDzoLqaammsNWpU3OnIeTk39JvGe2cL4bGBUsYALYs4LMuSLHDNWWewNeKmJ_tXjPgyI_9W9QPSkBlihZVmYOuBsQBm
+xTW5sW8n38JXNvaQvFwtXT0d-4epEFqEyAvlHMvQh-Ia1JGNafQpAX5aKHNGwGM1hhoZiemrpvEEjI9qVBs_RJHI8nM6WVLFA815d0l0deiXKkEHGuP1D3EI
+vaMiL2CHgmt1ST4K0cbI5djaK6azau7xua8i1ZbuuJp8m7lhEfCc1fTRl9Goh0tyStb6ICQGjCdBM37LE2OrAuBp78eCA3IpLvW644AXcPMyOBthh2RwMcr8
+4T1TPrNExH0WQa5kMsyD
 }
 
 AzureEntityColoring(AzureEventGridSubscription)
 !define AzureEventGridSubscription(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureEventGridSubscription, AzureEventGridSubscription)
 !define AzureEventGridSubscription(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureEventGridSubscription, AzureEventGridSubscription)
+!procedure AzureEventGridSubscription($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureEventGridSubscription, $stereo=AzureEventGridSubscription, $tags, $link)
+ !endprocedure
+!procedure AzureEventGridSubscription($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureEventGridSubscription, $tags, $link, AzureEventGridSubscription)
+!endprocedure

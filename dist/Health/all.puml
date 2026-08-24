@@ -1,48 +1,71 @@
-sprite $DICOMService [70x70/16z] {
-xSu5SePW38JX0DbiuFxthNUnNuBK-up0P-_4Vgf__zhkiDQS9_3W2OBVZNVlm1BeWOyH6x74Hifq9itcIZUfj7Z58hpoQKN_M-5pAb7OKIMVk9ddGW2HKmo0
-kH1wgSeKyIGuZMYZKb5aqY43Bs9J9QwwNe4PSefn5PSLw97xAb8SnfrvHKGj8_M8C2iOPsJYhaEZ24kHuvaeEMEKTQQVIHPDtwtbeOWSYyYXYEInYEoC9B3A
-52D0wjUCysnra33J0AwACdSZUkdNA-gi6_MAEkj6lI8fIjGgTUTNXYSmux0Bp33zvwkXYA-wMKMQMiHah8IDIf7UHg5D28SIGlhXc-bFYVWP5RS6XpNsK_tx
-zmW
-}
-
-AzureEntityColoring(DICOMService)
-!define DICOMService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DICOMService, DICOMService)
-!define DICOMService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DICOMService, DICOMService)
-
-sprite $FHIRService [70x70/16z] {
-xSy5bcmn28JX0aAHpFxtszuyoHN6hR-ZL_AV2ieUrBQWnhbDKA3SqL1Wt5EjO9NzyigZ8lzf92LLlW8MRy0ORu3n2HvujlAYgAbVCHlveinWVf77F9Kx59Wd
-PcGZqoUN2faY-A_e1QH2kQKG2T80vuOeLLmWRghchwdGSQFjXLVYcPq3fW8ePwrO4RHhJI0-LQnMSGYlN83sWafSAiOxdJAkzSfwffMtADSpqle-dWZu5_id
-qy1U6sEmjOgBz6A542R7tqs1zycOz3WnQ2IrkAD2HiKbGu77Z0A9KHCd3SAbY6QabD4vqmIMaVATr4KZkG0j-dXc1YSQGOMI9e0obzGpxN8k15VgCIqfPJGY
-71V6c2B5J6IbHKPUbX6SC2B6oyG5JTKpyg8vgO-NwuL8HItoj6Fqa_7qMYCZtze3toG2yrTJB7iu0W
-}
-
-AzureEntityColoring(FHIRService)
-!define FHIRService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, FHIRService, FHIRService)
-!define FHIRService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, FHIRService, FHIRService)
-
 sprite $HealthDataServices [70x70/16z] {
-lPO7TkKm24L1jFslU1fstXamup3jfaSwrpo8b4__13xVuFqwO3M_CA4E2zQL9ud_HDt7MjOV7QHU428WNh533tZ3y0pp1tG8L326v5t3ABbh8EaS0gTOQYZp
-4ORbnnFFyBJY7rkdVj2NYfM5Yg2jWXarLFsNV9JYcb_te9XRoBu6dJaf_FrYCX24zkESYOojc8TjICSczVo-amE6iN3iy-qzQDBQ0ulKatL4vJ0bih4WavJB
-WtLV2tx2fIaR2rfTRnUsrqd3KlxkCF_wwmhbZF33TDd9niBUiFEcKUBHKbCTdpZ4H1mbqLQJjtO4Mcr3pT2Crqj46VjAmscnI8sYCGqTMsmPY3Gk3I5InNYm
-15sM4p_02H_BjkO8lIqK2Vw13HtKBd7wmE92fiwS9qbyWxEKZ7Gpjx1AuWU7OA6uaIcJYJL7Ie16SbKOuPLgm3C9zttS618EXYhHqbyiQRo0E2SjA0QPoECL
-Jab-RSKuVKPZT4cK273TaCOOa8-fG55Q8RUMKzum7EFK0IzzuxpQe-7dAXy709m0ZDzEOTBFLB6cGOKcH_rsOBTInxl6CmFZDIGAgNam9y2GzF2EFHqfckVD
-tCzY6pUmk2YlQE92QSAYOoKBVZtYqV0I6PALPZXjEmqQm4Moqnoib3ZxQdZeoQR5DZPsC_0NoLQZz7balhCtiCS3JbjiIBD4tjFiKndJRoBjplwZSep-31aA
-sI92_ucl
+jTD1qZ8h38NX420dtuZzx_PMoobGWoYtwt-7geyXjErVP3ryUT--4-pmVPQIlHMDhqwIOkz5Oyze4h550TanIKJKLWLamwY8P5j6v0V6zehjceZD4yMYicRi
+CKkoWw9YNH7xdmsbN4gvezYLt3YI34Ll3AD3gJ8sKt8kvLoPmoJBINgf72d69AJLVYhBLAh4z3SbJSMAz78jPHmidogMdk-fPkwddYdr_RVfw96YuHir_JHE
+eZ8ELCFw7-qPULRY7tBUN3bHaiNqsrsLIm7sYkKlErRHgCJAdf5BSSVShYshEwQ8f4Q62oY737_yeNIdRCQkdsuAjO_IGCPsJqPQNnGyYUXG7FqoT8F80Yb2
+nRo7EePPtr8DXfi8JzJScNwwR2NoPZZIGAO2hZ1Ktn5W_AmebL7cwIEJNmYCZr-r7bw6KG2sZbCmRgjDXJqMd2yFmGAcC97YhJ4VzJtw2Cn3_JZPsqA1N9b_
+2qh4suBX4m3VPoaWL5YPZFawPE5EXXAOJ0Q9s8T1n8ZC_docdKcyhlL6H16GUTjyhbbU7uQdSRIV6F1_chNWsKYsHffvPEnv3tKOKlWijHW2qn78Mmhl1I8m
+ogcvx5asxo40aV7nuLTZVgPzoXTPC8WSAP3blV-rpy5ZCggJzhRBOqLOmXRPCqXKB2pbYCbyN8Dnn3ZCu2EqNt9uwCXWk8amR93R329olXnOEmut1s68o5qd
+6kVRWRSx5V0mDyE1SRF_
 }
 
 AzureEntityColoring(HealthDataServices)
 !define HealthDataServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, HealthDataServices, HealthDataServices)
 !define HealthDataServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, HealthDataServices, HealthDataServices)
+!procedure HealthDataServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=HealthDataServices, $stereo=HealthDataServices, $tags, $link)
+ !endprocedure
+!procedure HealthDataServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, HealthDataServices, $tags, $link, HealthDataServices)
+!endprocedure
+
+sprite $DICOMService [70x70/16z] {
+xTQ7hi8m38NXeEOSExdh_T_sTier8iMgsF0nk_uwclrxLXyVSW5RaO_SBI0Xw1RP8ib8I3BvHEKW8OVJbGuZIX0cdQzasINVfa8vHZOhAZh-L_4l0ZotHmNB
+bRsnuWbwbDKEeYVgORvoha0T8K5mwOZR3bVOrAxq_taqIfCVXklxPxGZsnbaRU4cZH5kkqY4eW4ywnAZz2uGYQo9l4166ADUSLI2j6ovHAHtaKZH2qH26IqH
+UoD0FAEjAv6IH5TL7AR4CilpVwF1rI0b-8gdZKQiOhJHY5MChfLJkAh0LQ8kNwczeL9t6Ifr1djcA3Mao2IxYgaXoS3cCYKqIZAiiq8if8O85YorwUFl8f5d
+zV7n3m
+}
+
+AzureEntityColoring(DICOMService)
+!define DICOMService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DICOMService, DICOMService)
+!define DICOMService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DICOMService, DICOMService)
+!procedure DICOMService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DICOMService, $stereo=DICOMService, $tags, $link)
+ !endprocedure
+!procedure DICOMService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DICOMService, $tags, $link, DICOMService)
+!endprocedure
+
+sprite $FHIRService [70x70/16z] {
+xT87Wfim48NXD-sDjj__jX6nnQuj0fFU-6mw_DItiXFtbIFVd-4VLjdVclzlvQpaFNOvrBQEo7_hnCNMYZhNkE3QM5UK6Im6vYA6UeS2ZzM8x6RQzCiGM92y
+3fdN-J5actyJKg7SquubQK1yVuK22LEruAPiXzWvhdIp4xKA3L1t5K0vys95OACcpdjMgmI45o60yOvMdujni2aJXKgEok3t6RTQ9Q1yPu3p0_LsZ9s0jvdW
+ob7zx0p-fOi9IAjW1-4g0ELA46toCFrQTWRBWVfn7j8UvjzioL0GELiY-L2JdKCuHmGw8hMCGZDlGoxmUcJSauPOha8WCIBbJA2Jp518q1KmJf5IHfWfk33c
+YDGj6MKcyPaofqX5BaR5SpDIpmWwRaVg6PfgPBQ7RzLoDKVgMY5IppmSU7nyt1qUMilsy7Ymtw6U6RkTJcy_9BBjz0a
+}
+
+AzureEntityColoring(FHIRService)
+!define FHIRService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, FHIRService, FHIRService)
+!define FHIRService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, FHIRService, FHIRService)
+!procedure FHIRService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=FHIRService, $stereo=FHIRService, $tags, $link)
+ !endprocedure
+!procedure FHIRService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, FHIRService, $tags, $link, FHIRService)
+!endprocedure
 
 sprite $MedTechService [70x70/16z] {
-xTO54gGm48NX5sjBt_-yosY5MGWDw_8XvJzEWb_blvHBRJSbuQf2FAXNGgaIVsYdEvKtKCOfZRTLd42yfrwANCyqdYa8AJn52G69UAuXeFAHX6DygE90BiJ7
-vedACHcxKkEeUlccqc2tqcGkOI8Q8OXlQ1XLEQoeRo0CYinmhRK4AZoD9AI5s0PAYz3rD3GEVEH9fYf2NsS9L6JNgqB75V5Tygp8YKeNCNTJiOzA3bJK7wmj
-xBvNVr1cJa3MkGeHzGTg2thiNnKHQq0zKMa3MrLolD9fSBdYDEYh2avKXDx4NnMzLoHUwUEfh2ijNd4RxigwaeALCQF-MG6VgBZnS2PZ9UjCMrUy2tVVg83c
-5LNrNQgl2jJsVLtHdKhM4nM3VbGo7lAyOZuWbE4556MyPOrKAY-x3AWRdbWP0pwkA9Ax8Q5u1UcJD0mo7rKAe4xWWeRY3wPg5QDCEgle_ImokWBGeTBm8UNQ
-rlAxac0PYk9UKVrTiQ4oeIfbaT6S0R2xeO-LYW0pnbrtV-m7Pf8HgzZwPLbN6ASh1luE5UT-lT9zHuzNPi8L_IwLmZ916M6pUTq_NI7TKF4J_FS5
+xT07QiOm38PXPLaJVF_RLjc2FykcktqD7pCF8lch-W_tte6eXl2eUgEUmTFU0_5ga7g6yJqOlAiUUNy5tmN1KgESwV5nHMUKA_WU2js4-K5qLxR3pf1wXQgL
+0WJ7v33qdYaPRtfyIhqIRw7J2XHIEujcXPuejgJCkkmIFrLeKsJmP5hU519nXQzpXLOb3LwQTrLeKlYkNT4XfFLA6b-QLeeLNfGKqbh5Q4V8LeL79HSe6awf
+LI8ZLgru4f6ev1B555D2jLT5IXHJ8hK3nPchbrsoc5g8ULCkUr7aMCb5Ye94SbToYOBGZPlcc3blFLDwzEa0s0IMA2gP7oWChKtVjquDl2OId0j5p5kkI81E
+GAlnlyHk5886Ecj16KRkJF4k56r0Mc27h8VUDaMYSXupTLuBWo40e9aqMgu8mfJwFUF6H1ug8c9h2Jgps6AKAGhu3egXrYjg9sc9SjxFKc9sM07mhxnp_xq1
 }
 
 AzureEntityColoring(MedTechService)
 !define MedTechService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MedTechService, MedTechService)
 !define MedTechService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MedTechService, MedTechService)
+!procedure MedTechService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MedTechService, $stereo=MedTechService, $tags, $link)
+ !endprocedure
+!procedure MedTechService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MedTechService, $tags, $link, MedTechService)
+!endprocedure
 

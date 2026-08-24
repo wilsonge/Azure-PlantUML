@@ -1,127 +1,162 @@
-sprite $AzureBatchAI [70x70/16z] {
-xTO7Tjj0303HGLtc_WTEaqceOhrIUZol96x_2GGRJQBc3f3XfZoHUkJt37pxteWrIJoF77mxIbatIbbsoYZbec1Uv4pPaaaIELSCUVsp69CKY8bYG7H3MShE
-XCcb4fQ5R9lpACayCM42-8KYWEMER9kqEvOQxqBXADf5IMOnM5mTbx0TEINjwUOKKSe1oUJaorCA_d172cDxgnieoxkZ1DZMZMJ7Nsbplb0ZENUA6gXHQgJx
-MxeTg9Ix8ur6STq7Yajbl8rakOkDKWbMYgFRqO8I07PI722VKXG01GN0nhKYSwMSCfQLSiguhh_91MB7_mNaC4mPlUAbWDq_NnooVnRegcAqIx9EyNOWy5A8
--qg2jmC1QmeFiWDf5FmOxl67SGL0xYi2W6LTq7TIOq_YLXbIhnLAmm1O141SAmDW30DGkaHzFsE9IoNPp-9GfQzkBkYbedNB7VJLOLMvdaYq3l8icR-_AFEq
-LmhfirvntbTqIl3UzXjTb39itAwdJuzbnqaP1jQiv_5D8ewBmWs0vg1qCza5tCxJtoJAw9SylsDH5pMBMJ6rQMErU-SBoyMj4YndjugndDugmd9og_14jQDN
-bBX-PqZ-yaIl4fx8Frtb7yeVrokBhkBYg6p2wqm2BpC1hpD6tnS
-}
-
-AzureEntityColoring(AzureBatchAI)
-!define AzureBatchAI(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBatchAI, AzureBatchAI)
-!define AzureBatchAI(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBatchAI, AzureBatchAI)
-
-sprite $AzureBotService [70x70/16z] {
-rTTNWXmX30JG0SM-_u4t8EYQ80RQsVNZ_2nARE3sdwGGYvgxgJ2L7o98_2boLMBp4NC3P7p1Y7_nc05jEcGWKeX-m50HVO9ivIWCKwvddQMo6XpTH9A551AC
-CpUAdKQzfQaw72ihH67aZdzdmWnaiKiUJDv984hhDPhDkf6Eb1KIfyetnO5888kKO0v-vcF5q1VfJCsQrRAhbDvmTfv7MYnD7BecPt9FLcoJy5Zuqp22KZOK
-xTMqOGI7V3vFf4eICujxCivK7kzRgAj8A1X67nTKhYgrAJv-XL5sbOYCEuCrr-iAZMNZG2YLgEuffIaMFtywKFnYeQ3V8xP4JI7y1_iAjs48IlaHfQ0OGItx
-IW-khtuh-XEAzf_b2flosO0Q9ugUYdyhygg8uSESBNutLVoTylZn-vrNHRwLuxSgrqyqRrVqlbsLsOuil9-yB_hhRXstOkgFABMLsuvDJU4VKRWfT3kNfFkA
-OaLzqQYtx2c521_-ermKGuco2FLQMWhktRw2cpj6SspfYb8zRYvCzBkde5ivMy8mePWagSae1mw4ORgIHoUZ8EvOaywOHuJH2duBPw898yzRnfenpFvNV5ou
-60MX0zNi9923afVLFgE1SFO7kzyxL8jID1qo65eXr15B2_EMzMl27SrE6L-yRC8uVBfFEuA1anY1s6qUENmusOjFVI3olhcZE_xo-ZG_ZOEMZvRJwGycrNZa
-mTXvT933GM0OtRR2RGUvuRn5m0aA08pj5BRZASReumeagXRtK2M8_o2V
-}
-
-AzureEntityColoring(AzureBotService)
-!define AzureBotService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBotService, AzureBotService)
-!define AzureBotService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBotService, AzureBotService)
-
-sprite $AzureCognitiveServices [70x70/16z] {
-xTA7bgCm38LX-Qhw_LzuAGQKnJ64dB9b_fbqvpl83lsJ_VHJ0OjEYJ0zJJnd_AtH-jY1UIzyXf1vDw7R5N-hk9NRo41nkuj4W2pUTO_n62iXT9t4bHBbUfv8
-okEPx8OIJECGTnGR6-A_AswgvlTtXYrQIN765FlDOqeBio9GTmNV6gbOH5TXNYtpkTZomPvs54XCATOijkWSntk5srnpaDWg0wI_Bs7WzYAsJFWLAf7gdn5i
-LrA6fFX8YJ0HyKXAzwWaXafEq5cu5WyK5OXcHgAN4DjQJn5W_a-d5TsyKAluIJ7eyiBs7o3YJRR6n2T5bmU7jF5U1Z9XyHD6o4f-s9GeQHCDO41lABhCOhjY
-vBNbaAWkyFgI4-gUe2rbTMLORPMeBKEibatvKAd6cBAwnMd5h0JMDaP199wKjL18r3rBrsBBlRgxGjhNsc5dfUbMZs9_4RmEs-PQtvk14CAk77bMj1uC0FQQ
-52DTB3efOZKLdA_BB6fMb9R5E9JQBQYUsnKdNjRWGd6oWL91uiPa5ueIZnG7JKczK43aVQNbQbwl52B2I6cD5QKf-r89MehJ-nyfGalbAyMfXI-KeBqIJvKe
-bD9dYjDhi0UAqAcYyPcYrA-8chkRYFSwtZOLqD_VJp_z0W
-}
-
-AzureEntityColoring(AzureCognitiveServices)
-!define AzureCognitiveServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCognitiveServices, AzureCognitiveServices)
-!define AzureCognitiveServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCognitiveServices, AzureCognitiveServices)
-
-sprite $AzureMachineLearningService [70x70/16z] {
-xPM7aGGX30Jn84J-wRvV9svmzMMF3g3VJADLaCI2f21lODcMRTcMRTcMRT5HuXOiaGJXFoHnGHAa9EbvYIF9WiIIn1x_SpiiCIGvvo4UrMY2yoJcRCOa2SuJ
--OkibpO-c_Ny0qr9v3ns_2a4afZZVvxv8FP2WVFep1T-KkAlZU-ugTeYkXEsNrizJs01p4Od-0GT2t0s2S_3Bw31K2owdZYRWEUH6foDnqyGQu8C1MyiUy7P
-M0Bpz3HMX0AUeDJWR7I2y_Gr6eVYm15iP1F1F8EQ94FfW_Qkzycb0PnRMf00QTGh2vSvJQvU49PWJQoQm_yKh3cw4v99JLKTbc0DrQUb8B0cL9ztBlCQhGwm
-fAyHTnj8EXeIvpANIUJHr4ZIrsXr0URfQ_BpMrIMU7wJ79SrlFhX4m
-}
-
-AzureEntityColoring(AzureMachineLearningService)
-!define AzureMachineLearningService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningService, AzureMachineLearningService)
-!define AzureMachineLearningService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningService, AzureMachineLearningService)
-
-sprite $AzureMachineLearningStudio [70x70/16z] {
-xPO7ZiKm24GD6Ev_uwta8wnuThQtFBNKqNE19FuH5pDnd-smZj5XXlWuq773JW-r3bNom7zDofKYYPeSgCfol1xQSNYaQ6AcDFKm616aZ-YpKsJ7u5Dcx54w
-9H1iYWN2Vb2AaYdoldcHjDNO8oCnRIcz0gJT2fDdsfoG5O1J-0guKguKjW9mohO2h2CmHMm1Z2WIRIb1pqjhCLCIor0-fQiaNe-oALQpiiW8dL8gKfGCcp9B
-PIV3VuzS1CXKoYAkrbHK6beoxSzZq-1hbJlp9YE1CA3IP3nsf8gK2YzZLcXELgbiPTGQOq5gbO4CfFyn8faLh68TRpAiYiKfmgbeZU2CIQdCcirp1aA12YyJ
-NSLZ2w42ffQGwQkiWNX9nMjg0PDLmQ1bvW5RZaV73WkQ2RSk2ouZ4Xa82mhZEWF6nyez
-}
-
-AzureEntityColoring(AzureMachineLearningStudio)
-!define AzureMachineLearningStudio(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningStudio, AzureMachineLearningStudio)
-!define AzureMachineLearningStudio(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningStudio, AzureMachineLearningStudio)
-
-sprite $AzureMachineLearningStudioClassic [70x70/16z] {
-rPQ7ckKW28K55J3l_y0RajppfGoHxRjd6b7vAUhDb3yiNlLJW2Qs7DBsOwYgoqsTlZkDvIl9Tt7OuAYhQITE7Y9mCYxcfVJpI4vRQ7MKKjaeUuMsirggcZqY
-EUHWzgDHdHIOESJTVJs1SfJ9XNEOuJ5tM2kW73DISXZR8PxAAA1Wy-d0y7Htl1lai1k5ZYGSOsyGyZZcslyUre2r3Mv5J-f9Qh8_IMb8yPPMbn-lUiXMZyEK
-ptmBapctjA5_wAwBuMpnRdi6zDaglLDSdYB2nBtLcsTa4m8-X4E9c7UAmDQe9CQPBB10GSq6IyAstBeOKkB622PgHAc-186YvbhVfBxb7mqCNoPYolVeTr6u
-kKHLPPVgCBlTwUTLl_VrAVtkxbA2WlrLMEFnFdx8ebFNOI4Gn79MZsv0Vzw0kAXsllW68cpSndUAufPSAV1jtjmP1VVbIk7pwqLcb8wB10gs2FjCCuecFxr_
-diA_Wc9bIkctDsozVAAIKqf4OThKd8AtFIXusvFvcGmfECPkCfRQoP038YMcmDIs9qDdIjzQoeQcJ2cBCk-x2Oe_TqSXaod5FRfZG768LNk1e1a0-kBXlunt
-IatznojdYcEWxlVRy3WuXdG_96TA6ykNwYLMTSUAl5p5uzyqGWRy-eNfZzJF84EObtg42jG4gJ6tlggY6vbwa9kA0fiIwQfhnOoXjBggtWCt7sj901mUZHEW
-y_L8SXZA1aLD-Nf2FASW72TEfgQQegYPHKrijged8DrMrR1bFilpUjwZaVhyb6AJLTNdPGAHwI93nQ7Qs2InRBYCNWEDfFeRPMGbaufoel9Vw1i
-}
-
-AzureEntityColoring(AzureMachineLearningStudioClassic)
-!define AzureMachineLearningStudioClassic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioClassic, AzureMachineLearningStudioClassic)
-!define AzureMachineLearningStudioClassic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioClassic, AzureMachineLearningStudioClassic)
-
 sprite $AzureMachineLearningStudioWebServicePlan [70x70/16z] {
-xPQ7TkCW44K5qx7-_tjNWj7aW4sGjxUx9GrTvhtuWBS_XeJCebQAgGeJV8s2hOpecw8ivIM6RpYqD0GXfsEk34ZsfeVRSeOX8pMvvMqDn9RJ8NafeN92qprg
-C5r8f2vAiJandraWfsuRIoj938BY-sOvO4nkjgfPz0eVUuQbGUtHL3MV5viZVsTfUETdoJAH99_4X-ej3hTnpZtSEABn8orFbY17g9VLuCUODBUmXvzbykRN
-YM85F4lYsvP3CrXSWjchiPVLIhNj3zSCbf2q3_2gOFAwODyxZM8zhZuaS9MZTOSUyr7AVb1IqsYEKJ4a9-33vCuHtyAzObNJ3PmvLucM_H73S6yH7w_ieNa5
-scC_q3eCFlNhLVae4mtQNYcjcJH6ojwjx074pt8L9dxi9u-YSb1N3mSHUQ17IEnog9bHkiPuc3JWUYg8el8UP9TOfJI5i5oG9nXhIG1a5m87XucjSGnfcBOa
-WJyMnNXF_0niwfOYRRa4gKM0BO291SC2SOfU-EkRkaD14_4J-KeKvtdA5wdLAq-_8km7ETUbDWnEZrZTd732KCf9OZM1sLNSlNfvRd7c9tKtYtsD1IvBVAKq
-raihU3XyfPne9z6oPBm8-EiibeUYa8P8j0J34NYxq21lzoi0ZaCIVwpbluM-qiATvIk7eNekDJ8VfA_BmzGflo9JwdTF_5MPQ7WAtFhrULmhp6_cQLTC1_iR
-t9lu4p2EvzVERT1ltXxoDrytoNxnZeZBbyHgcDXlPwBfbXIbBm7HwL9HrLlLf7Fbz0vL_-4ALjLvXQYgoqo-R7E-DbDQZDmouS8YUY0uH_Jayqnazz1FBNQN
-zECjMUu1sv_15m
+xTK7Tjim381XW0D3qgllVzjIA667ebZJVAFpRxEJpm0zzFXZsgwj4sthHjk2mIa61C0GKzQF73UK8ZHXbdcd6Wbk2ZB7VDki38EYJZYwdGb2BIOg8DhnrF9R
+Hfj18ji90mGkKVIrz0rZFuvW9VjbLwo4S8OTqoEXCLnn1omnvUqax8Oh7Y6SgJ539VbjTOeNNakD40OhZnK2ApPAYsXpTuusikYUUHwA16DwnP4K_6Xqk0yT
+E_fjTOeXzi5twXNxuN4SsnT64W1cQX3EDdElx3xATdnX948DqmiHvdW_Z3_Uqc4Paytma88XiXqxam_JAUAZE7DJrlqeYGsJJEaVS7OgOoRfOUrimw2lT3rR
+FfwzZYJKZRRgYnyqcz8lj1yULoE8gYP8KiTGjcobt2lKBBHZHTIgOmYnbyyVRgLMYHWZgSUn503yEsN8ZG8WUpQhAUtzJ7qHn1L9S4RDmrYcbFHKaj_LpIi4
+NHN1t24vG5PBy7c7UUZ7UxsBucMG4eef4MwBLuKx9O8n9Ce31CACyZQyAhgWz1jjd3ErvNVHzL5dIOF8DjEwqYDUh_27XcTd-YCgFTRoXref_PRAVuKk2gqY
+5AeIwMnHoU1bAl7QA0WUBWt3pKlAwav-fVByvVvZXB5Ha5pv28dG5lbiUPzsf-LzF5VMzl721qpY4e6tk9EmCCDzBAKfv2mEb21pZDqQmQWynqZ9zndkb6Rs
+IJ0kJWoZSiPfdCsY-dDbidMbxJTI7dz6tm4
 }
 
 AzureEntityColoring(AzureMachineLearningStudioWebServicePlan)
 !define AzureMachineLearningStudioWebServicePlan(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioWebServicePlan, AzureMachineLearningStudioWebServicePlan)
 !define AzureMachineLearningStudioWebServicePlan(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioWebServicePlan, AzureMachineLearningStudioWebServicePlan)
+!procedure AzureMachineLearningStudioWebServicePlan($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMachineLearningStudioWebServicePlan, $stereo=AzureMachineLearningStudioWebServicePlan, $tags, $link)
+ !endprocedure
+!procedure AzureMachineLearningStudioWebServicePlan($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMachineLearningStudioWebServicePlan, $tags, $link, AzureMachineLearningStudioWebServicePlan)
+!endprocedure
 
 sprite $AzureMachineLearningStudioWorkspace [70x70/16z] {
-xTL5WWCW38NXG9JU_y13nuELZ0jVDzKVtghmun4788mb3O6nh4EdmfvwmXwC9VRAnVbbbLCvbLF9wab3lJIfNDQ7NxpySoi97v0zYrUIzEn3AXfVnD8fuKg5
-tKNUNx7tL4u5Fg9IRbIO7cGFNP9WMCdfAhC8Ge2lFBNfeokdGgx2RxsAgxpnCb9bU92bIX378iBTgo3qfoU9RlA_yjKO5cqMiAfASC_WZrjKbK9xjC9HESC-
-wMyVtqHQGKyh3kxfvSWccHx9MgNDFJRzgfgPm8Pi5SO_x8zZc24pszX4LjquHA9xnbyWMBChfJafLX_hJLps6AoKNHaMh6o2bIIwGn1-Xpi
+xTO5baCn28LX8boext-t4wOZvNbIbsy1_-4UvV3mK8F78bBbCfNyBXNk40_iZLGoUwkr0_RIOrS-bK_bKu5uy5Wy35TqxO6zjQUFMy4l_LDVmG2zI4KkKbdL
+Lip08MTNz9pAfu9BL5OB7xgS79PJuC5A32OoWFRdCjDHViZAfm9NQSp0H3fAQCkiK33zOXJITagWNw7f646HoBHlWXIWKoocxXGJN2M8gOuayfAOoWYJQTpa
+ztXY6lPuKKn51EJKRz92Q9XeiJIYYOP5NPOHBK1ZU5b63OqJBNBz7Y-fMH1HoUDazMsoibgelU8zKENm7Bu
 }
 
 AzureEntityColoring(AzureMachineLearningStudioWorkspace)
 !define AzureMachineLearningStudioWorkspace(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioWorkspace, AzureMachineLearningStudioWorkspace)
 !define AzureMachineLearningStudioWorkspace(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioWorkspace, AzureMachineLearningStudioWorkspace)
+!procedure AzureMachineLearningStudioWorkspace($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMachineLearningStudioWorkspace, $stereo=AzureMachineLearningStudioWorkspace, $tags, $link)
+ !endprocedure
+!procedure AzureMachineLearningStudioWorkspace($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMachineLearningStudioWorkspace, $tags, $link, AzureMachineLearningStudioWorkspace)
+!endprocedure
 
-sprite $AzureTranslatorText [70x70/16z] {
-xTE5qkiu38RXJwpq_YzuLvvgKZ0iutb-AFfDh4pOudUpYln-lpJoWx36xmT8_6x-XrGCi3-audLAhihqMtfQ6632aqRp4ajvmpjYjNmA6zGYJwXM0X1LzyXs
-LrIrEmSC7ijoMYd-ooiAh2fglwGYcUxyNacl0Jypudb2w2iabf_2AY8IkHMALzyT6nND7IC0O3K6101aaf73oHXAJNVyjsbcL6mVSGQDPrRxeyccGiekGf4A
-P38GOmNgoOVzbgXMLCKTa2x3yuDLnNDECSxU0MFqsW0qFxY8i2rFXR80rAVIOtuNkqelPG2KxLUUYmFQExjduHzpSLEj2BEAwBeI1D37n6-XKdYm_DGJK9G-
-FdzjAEw8vWG3n9KGmB8e0JIRoZfIModawP5fodqtV6UMaMBCsdl1u3bX7JbJqFAMi-_8DPVNXkdr_-DsROGfCwlb8SAypXYXxO_5lCuGNiWwaXKHYMiA0B5Q
-65Sc3f5L1j3U6W3UHLZAT7gSzrC0UOg8dYx2Salw4b7RLmA0huzH3R-E4e2kFprMmbKO-3qL4xHZnTOZRRokb1hjucC501BrkZZxYbOb5WFjwtAikEZYCWk0
-F5sZfiNdzo9VBGwtjLN59djwMwVlbSUdQrJClpu18FqyKPN7HgXQyNm_307KhtXVAVwi3Fbe0e36ooJGlbBYhiHTIHGnPG1vg9JBAzALva3pnx5IyXaPbPQC
-WUBHbPChCtvsVSHhwez_eH_o3ub8_W4H_Wa
+sprite $AzureMachineLearningService [70x70/16z] {
+xTI5UGGW44JXUCBEVDd-guqRjXaul-CLyEDuDrIvqDagIrdAKfQobAMaAji6akwsWIGVxXGGO2i8i352o4oAfY8m8W9i1G4r9KQ0hI30LX1WQbC8WH5sjceh
+2B0L11X3t5Jchet4pFFW3ubsqde4Ha04Ha0KHa0KHa0KHa1KnYh3s4rNZ47oaXZMHEh9W76I0lvNMq6mAG93_on01CQ_iWnHYXMgDHHaEwjLAsuLeZDUAE1G
+RSKuMAcWGdJ6iycGKund2gSg570o_-WL
 }
 
-AzureEntityColoring(AzureTranslatorText)
-!define AzureTranslatorText(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTranslatorText, AzureTranslatorText)
-!define AzureTranslatorText(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTranslatorText, AzureTranslatorText)
+AzureEntityColoring(AzureMachineLearningService)
+!define AzureMachineLearningService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningService, AzureMachineLearningService)
+!define AzureMachineLearningService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningService, AzureMachineLearningService)
+!procedure AzureMachineLearningService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMachineLearningService, $stereo=AzureMachineLearningService, $tags, $link)
+ !endprocedure
+!procedure AzureMachineLearningService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMachineLearningService, $tags, $link, AzureMachineLearningService)
+!endprocedure
+
+sprite $AzureBotService [70x70/16z] {
+rTU7SkmW38LXgWpJylvFUyjw_uc5PIpISwQaVtEGieMNNvAcycw1z2MYjwlqlbfZKrbpEiGvRgUV2AbL1gZVECgGac9u9gQoMzJn8JL7119pFTHn83K5Cqbm
+Bfc68HYs0pD7IfYcp9WEaiDDyeHv8XB3RHBC5L91fedoO7gtXoB16HXpij6hH6iqJqHlk6v6E7IcZDxFUSKsmg-LKnc6ubE4qQ2eAcbGKZNogYJAg2hLjnoK
+iKpPbRYgf5qf78WgQqgenp9CPLd9PoMGb7FqAN53OKDoN71rACotz_vQ9VEJkA0Kog34joXnLCAIGWP5Faqf8Zm--NnKH2lrh1GUl-hp2wLVASBZLtskbVfG
+sgFAUvN-tXEzUxfwH_s3_b_Uhx2az1ObCLoKyXQbZ8eubNfKfA70H9yISux6GnebAyML_42KKjULUbGAMrfJs53P5UQBmgTtOROeb47Pgf5iLK6XJDi4nOvC
+gr26DObFAReAPJXJkc3gk6Mgw39jwHtPZhGNWn6likdpwD5u6J4H66OpJzeOYgcmgNao28fYQ7DtcsWQiPbsSxF10BbaS2nZYi1mXHNhnYVDWL3daTFjSsi-
+GzVXmYJSyJ10_0xn6sJ_NPlWeUD99wD0aKM8GAp787v3_W8
+}
+
+AzureEntityColoring(AzureBotService)
+!define AzureBotService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureBotService, AzureBotService)
+!define AzureBotService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureBotService, AzureBotService)
+!procedure AzureBotService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureBotService, $stereo=AzureBotService, $tags, $link)
+ !endprocedure
+!procedure AzureBotService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureBotService, $tags, $link, AzureBotService)
+!endprocedure
 
 sprite $MicrosoftGenomics [70x70/16z] {
-pTW94kGW20LGHFWWzp_mTA8rgRInIZBhEy1l8QvD_pMs2D22mAJG1iI7h7xXGsb379GULJlydfIoczByaMsFnMFjZC5sTyFuGIz8Q0F7YHwe7PZsI_9LRq6K
-60puYzWqb7n_tKvAcqeChXVO2OLsSGoWeS8IzGmICUZ8c49oCQ42cqAIHJdi9p1b5O-81hielI6t35HwfKBr2cdlKkIi0cU4ZS-LLQvguD5vUHsYn1v3enpS
-Fgx4u9IXrWaDY0wPnivJ5T59kXw-9MTRKwtpc-XgRYWUaqo3USnu_jRYm9c2wcgxaCndNXwRIBG5_A0b6ZDwkqGxYXsW3tm_XTORMoO5g-wMp8IHrSt08h5P
-5UlyMvnARZ768n2b1WDXlY2wajvVQcP_cUdNGLOyLy-WjxCCKrEICOOgSsUplG5Qn22Knp23HTSY6jChwjCyoTEuYcamfHTgYyiqVVAtrGORKDw6U6Kr6q0P
-YA6VzaLiq1SXLXRd_uxwT9XM95lSukHtoTRKMB0JPxwFyaGIW-75Jfzxg-bw_R8TPB-Woa-mDMVoB-7th_B_u7-6V8hG-hp3xcFFQA5YUvDX-ZT-
+pTY7ZSD034HHH74v1ip-gxry7YSH8aVf5_2KjI5E7RwBcUoxnGeIn9OYkM9xAO6aiQ8Ick9MLfJRGkOg8P7Sb88I2iAI6qkbmiHlRZM4324IHAgCjn4omxe8
+6RSsGgTli0TY0BBX-4b27Fy92C3QI4IJUNamclBsoweZhAiClAsEw8f3O9AVz64APYiWuqIA9HEa0ZETv1dfRnqP3GbBpaRxDH3Pxrz7XiwbXh3965XxF1eT
+XD4Wqc8SCX8lqphHWFqcdiT_ateYzREvFjtJ4fECoWq6D5YPmVjg3EPQHndrHLRoYUwe9AsZZ7sLozds6N9blrsS8B9pdm
 }
 
 AzureEntityColoring(MicrosoftGenomics)
 !define MicrosoftGenomics(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, MicrosoftGenomics, MicrosoftGenomics)
 !define MicrosoftGenomics(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, MicrosoftGenomics, MicrosoftGenomics)
+!procedure MicrosoftGenomics($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=MicrosoftGenomics, $stereo=MicrosoftGenomics, $tags, $link)
+ !endprocedure
+!procedure MicrosoftGenomics($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, MicrosoftGenomics, $tags, $link, MicrosoftGenomics)
+!endprocedure
+
+sprite $AzureMachineLearningStudio [70x70/16z] {
+xPK5RiL030KRKyIv_scBmIVPyhvocn6qdqQJnHZavcPPKLsEVnzE_vV__XxBRT5tyR4MZAp1Bt-o9L86B57HjKJ9p5cGFsUPEpkWCqUD7N3DqUcDStP_1oIM
+iHrmMsvB_mueBOgGblOEY0rXnWKjDgteuEcDAIkaPKt16E8ccKuuQz6pHSdxoASBdba0jpY_BLUBn1lhDymZ1LAIc2Z1b2gcjip7B2C65YAbZ5a0cEKa1iai
+A80Of4xHApvaSLYmI4C2nmfjiMCq4mPI91YBGOf7JdkMDHYBNMTPegGvonObxQ5bD1u85KDA44w2p9m58IK89q4iMlW2F04
+}
+
+AzureEntityColoring(AzureMachineLearningStudio)
+!define AzureMachineLearningStudio(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningStudio, AzureMachineLearningStudio)
+!define AzureMachineLearningStudio(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningStudio, AzureMachineLearningStudio)
+!procedure AzureMachineLearningStudio($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMachineLearningStudio, $stereo=AzureMachineLearningStudio, $tags, $link)
+ !endprocedure
+!procedure AzureMachineLearningStudio($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMachineLearningStudio, $tags, $link, AzureMachineLearningStudio)
+!endprocedure
+
+sprite $AzureCognitiveServices [70x70/16z] {
+xTA7igiW481XtBvEuVsVDcKrxDmX4a-u_UHFjNqMgFzbdpwfPfD4DcLazZMZa6WqSpcA9PGfHqEPP2mKKrDLq-xNJY5gPdVbC3s9Z1KxeLXJ9XZxoSe4O_EA
+jL9H9c8zpQXbgIZ2FJcfMDGf1AmgWASKimC5SRD4RxrGx501ibiC4Ug8iO62-ttT0neeDb08I9K1y_Qo0J8Q8zgKR82a4kLyIIKxgMIfz8ozep02icqD52ee
+aJvJ2900A1cof-bIza0xHO23aiQu7IHRLAXJ6EoM0ZN5CY4axIwgGASGj0aPUNLxl1YG4AKjnokKjaIuxtdVIu0Uwwi_Kk3OmVo7Regt2FTTWPK1rFVocEru
+1H8MiQ7YCQ5Hl6jN32BKjhOiRQ4fRWHa_YG1YMzMLGRsYCgzHLFPs_VeCaHMHjokYFRRMSIKsaqHPEe73004qXGfV5zQbav1yQEKOrigN685f69-lhmZZ6l1
+LqeTARui90n5vXI5-n2nlrHqeEIp6YjKwq39nagzzHN5VvrIeqb5wzQKijP7CqhDrZUKHBBtbDfrJXaZ2QtknEijNwFyPV9jEVQg_twVFbq1
+}
+
+AzureEntityColoring(AzureCognitiveServices)
+!define AzureCognitiveServices(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureCognitiveServices, AzureCognitiveServices)
+!define AzureCognitiveServices(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureCognitiveServices, AzureCognitiveServices)
+!procedure AzureCognitiveServices($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureCognitiveServices, $stereo=AzureCognitiveServices, $tags, $link)
+ !endprocedure
+!procedure AzureCognitiveServices($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureCognitiveServices, $tags, $link, AzureCognitiveServices)
+!endprocedure
+
+sprite $AzureTranslatorText [70x70/16z] {
+xP87SkCm3011TER_3xu07a6oJE9wpwROR3jezlVn0I7_00i0_H3B3uX50EI7MDJCL9W6w3S8E4200GTyoaLKzr8l36uCb3gJX4NDFqCyZ3YGkAxVBCpIQGe4
+p6VchnPEr3_FU5WOXcqiB5zY8NVL0U1Nr4mF3SddBTKZPFCRcX8Yynw1A_nwdXRs3XsF80G12DwXXOOgc2wGaKt7MAuqQP5MCXJ38W1npqPytb0AMacq6BB4
+DSws3AORNKkNIMKYYmfBLnX-HAy0CYe22zyg9TqEol3WkSKR2suiTH_3SjdbfKLyYHtjOBWqHczDKc4E2U9ozkf-T7USQTvwP9HWi8md7nj3SBp4bxBOAM5V
+4FKOeU0Z2wcmRfgz9A8FXhcOkpB52XUfDvA02KEGF8pg2tHHaxc60LatXu8eyui8_HQH-V-XqfN4X0c9rJyZGUIvGmOSo6Sa-pw6ew0cu90GwLoIaqYYadDj
+lUGTsrZOZw44m4w2jDMGFoNdhIHWdosoJKbE2R7q5WC0tVSe56deyRRP5XRjdkVSPS_v6otE0uh6ufs5eHYjPKPbkPCWg_cSlON3Ohksd1NjBKhCwpRJTKIy
+jpW7gyhWTUZjsV9s_v6mYBsUnBlpLcHtERtZQH6zduI5QZ7Iqc3C4gXdh4KyF9O4hILGIJJnsAcNc9f9qCUIsD9Y410p3G1BIu_h8J6_n0Y5ph9qk6bWOIaS
+8K5xEoqzqosOpviceYd-TZxuu1C
+}
+
+AzureEntityColoring(AzureTranslatorText)
+!define AzureTranslatorText(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureTranslatorText, AzureTranslatorText)
+!define AzureTranslatorText(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureTranslatorText, AzureTranslatorText)
+!procedure AzureTranslatorText($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureTranslatorText, $stereo=AzureTranslatorText, $tags, $link)
+ !endprocedure
+!procedure AzureTranslatorText($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureTranslatorText, $tags, $link, AzureTranslatorText)
+!endprocedure
+
+sprite $AzureMachineLearningStudioClassic [70x70/16z] {
+rPQ7SYCX3415K-4A__-t5maYCplBWkVwIyE5XmhWj3zBmG_ApmY8fGwO4Dlx47Azm6zxqABuESyK1x7zkEUuH9LyaYIWMWlarpE7uOXO34Md1EWMI1P7LGXE
+91PuZFexmB1qJGvqgB4I59jS8xmie864djesgQhaiJJCbi2r8dHDsKZ4PjjSXjdInJ0qULiKr8LrmOibY2rWDeQsXgoo7qZ_EuR2HXqZMseJoXcI7lfp3ZrP
+92dQrJJGremXVhwU7t8YBsckLK3nwXhHjep2ws38tuIrqeqbQ8WmjY0lBE9psNewMoxFX-MU-L9zhg_f5X-Z-t3PvkWhnQl5C_NHiizXgkADfVYvoAl2iBt5
+JyoDPUfTrD7AKWnh-IVIdxw-eE7-pFPtqizRlDKETeZ8Hy8TFzD-h7rqYGLleDlg9ksqjn7QJC4RLZqYzqbhks0uJfOyxHVq4JLZwT4stbfmlaTnPv7vDDwD
+xLxUMNIbEul5w9juP_7pufPNOwPRQcD9TXndYxV8TMLdmSFR--SjvLTOk6qjfT-hNiZadx1b_9MoigHWPBNe_fABPPGyyFB3Q3evKOVMXUGMtwv3Gkt0GZqO
+dYqMIeGeLLyuibIAGUEUBA7wVudylHrPx7fLZLkqf1pPstDWiKwBxQtOBL7icRrajc1rKFjB_b1aAH7R96vHfDuYjJs7ac201lFDXgrjpUMYJQXGApYBXAKz
+GQW4S0egJQc4I1zu54j8oJ21fBHJN88m4-bT3Ha15AViBFjyzZdjyzddjC_7oMzR4ZYRd4xpSG8hT2AnDmQu9RFIzh2IO06vPYz1M17uHCC6E8kSygCaUoXB
+3eAH3k4IbivJA7BCBfHpoyzhsd_13m
+}
+
+AzureEntityColoring(AzureMachineLearningStudioClassic)
+!define AzureMachineLearningStudioClassic(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioClassic, AzureMachineLearningStudioClassic)
+!define AzureMachineLearningStudioClassic(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureMachineLearningStudioClassic, AzureMachineLearningStudioClassic)
+!procedure AzureMachineLearningStudioClassic($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureMachineLearningStudioClassic, $stereo=AzureMachineLearningStudioClassic, $tags, $link)
+ !endprocedure
+!procedure AzureMachineLearningStudioClassic($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureMachineLearningStudioClassic, $tags, $link, AzureMachineLearningStudioClassic)
+!endprocedure
 

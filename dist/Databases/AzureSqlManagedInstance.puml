@@ -1,12 +1,18 @@
 sprite $AzureSqlManagedInstance [70x70/16z] {
-vTO74gCm38NXk3w9Sl_hxiZ1B8eL8cyl_vGKcozWokJnHnLI_bWAdvHS7ELFId7r_oeLLdCAjjrimuooxLGgMmxy2dQIgsinbDMly5v5mMxaLsY7A6IjpCmH
-iIYheIn-fQpxGcGXMvrG2Win6alzN--Zwigfl5lTAKNEj0bj4yhTLUTN-EOEy2jtTwDVePr4OGDPgnI3GwdRJd9d6-6ifF11mRPRRGnLlbCaq1Z6qlIr2wio
-gS2kJYd013EBs6iyYqZXXoZLgO1kInu5eFkAeKmIqWS5v2eQoZH2-KuXdNzXF0Y64UIe50D1Uv24HAtQveT2hHnZxFiJB0MlUwilZNWkgx760uAsYJmYpuan
-TaOhb0VbEWBHql4XzQtpe52nbJOlKEyy4WhozQ1Gr0huI7w-7E-BJEXlszUo5LyYhH0VLVas4qlfwpOGHNtJTKkHYTsHj_6YP4DXfV3PiVAHcAD3YRRIdUGw
-8cvpSSGgH1bgCw0MUbHmLOXLjVrqRRiaFS-qfR2fvDgLoXoVgz7V-9NqYBbakTFek1n2Uju1V2X9okgAGK-Vw7xfGRXM83MQrFM5rvqvRlXOr7cNhMmbAGNS
-0qe5dn4kDm8DA_3G2Yrl4wROG_L50RzdvB2oDS2F5bmCnpTCx8gFiOVxOiF9I0PYAg09u_BqBlX6H_zHZEcrKa74b-Wr527-oBu
+vTE9SgCm3CPnyFL93fw-_zikYiWCBZAHzzxjlwVQyG_buEElAhlwBKfszcML0gCofvIjcMsOKRP6ERFb5B-2XhHdCG-_mYsBWcRaLwWLKSXwPlnAQNL7ilKK
+ir_9jLMGXMnbGidqQ5QrP9VYg_n3Il5yl5UqkWsUNSsdF5g5-J9j4meQfRrgRUDNxku0lt9tDyxi0b5uk0k0EwLehPN1AZZtHa4psoe-DLGqCeBHG1a7kpa5
+S3CEnC7C8FCARdChKymGeRiFSYcWsnmAb9XY75iu53_YLqYRLZm8K73lM0XYM9OGaqvb7_OnwvH2Y5V8U4xASaHIV4q1nxXUzy5b5SYHDQogXEUWwtHAn-2o
+IjeFY8Xq3F6bfQj2lQAhNAwswWfxifEXSA-0Z-JocRKiUnr_rbz5uNFKASIdaqiKj3i3UKY6may5dIA5HKgaluPxHHcKu-EqepA1EeLk5HGyl_WKvLKOKRf7
+bCUAfag_3vvFARed-er2h7MNFfuCIROZlvBmKegUpR9RLE-T0ZwAIqnP3YqasEaEO5MMAALtob6M2UjhNAdxRx0LOgtekL1qfAHpOlOeu5SeMOaZd6uA-dpH
+Mdk5wh0iorIxZru1Zvcep5ZnCz5493WP1e7OGYJu6Cr2J8Rc45DHns_OYaRC3k8lxHi
 }
 
 AzureEntityColoring(AzureSqlManagedInstance)
 !define AzureSqlManagedInstance(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureSqlManagedInstance, AzureSqlManagedInstance)
 !define AzureSqlManagedInstance(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureSqlManagedInstance, AzureSqlManagedInstance)
+!procedure AzureSqlManagedInstance($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureSqlManagedInstance, $stereo=AzureSqlManagedInstance, $tags, $link)
+ !endprocedure
+!procedure AzureSqlManagedInstance($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureSqlManagedInstance, $tags, $link, AzureSqlManagedInstance)
+!endprocedure

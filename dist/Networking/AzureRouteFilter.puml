@@ -1,10 +1,15 @@
 sprite $AzureRouteFilter [70x70/16z] {
-xTHLeYGX44JH01APtFz-vraIhLYxtP_oKmuUf4-VFhaGPnE7LfBdIsYLya8EZVATb5WxfiHWIUehIIr_g2GmwIj8RIM2XOv2vcn5z4o5oBcAwDaA4P4p52A0
-dAuG-Iuuk9E-5qDu4PpBDUyidt8pGwXeC6MbKX4gAYCbk5gYOWWLOt8xi42bE6mhnYmhEwangyhHv2o5oLaAcr9aeFZI3aoArK2mgEIuNKLM5VNOof2kabYX
-iiiOigK4NyjjM7SPBXKhWKbNsMOulwI4nlYofdZ_nmHyby0M5HWZGD7J5J95pr38w7aAv7p5c9QImU90GMag9Ob5fAKaRIdZg1IbmlwjzAEuQ0d0ofhIA2uW
-1QsSvDcYmwFtwTEdBm
+xT05TiCm48JXW2gjfp3tFsrHi4ejYiFnRwRlxJDlfBMrDJVIQHJtc0f2hpEAsVkCxLJmNx6RcAahF8t2sva5fr1m2WMdK1AmGD5J0CHHYYY4UXmNCblVpXMR
+CeJft1MgADGAMie-JcUrmbn1LT5_QgSK7YgepvAKVLBcEes2qoYu9KN4IM5JYhzNKYZ5j28_5HNsAKOfL0M4Kc5iI9I2GuLQsUz2hg1w1Rb2hLWzVrs1LZYk
+2786OAwu4GLQ65SO6InH8hDCuMaKdaPXHP6al3IKrufYZQ-2Y4QqCid0Cf6SCASCHH8dK0eD8N8IXRVUsjhQ5m
 }
 
 AzureEntityColoring(AzureRouteFilter)
 !define AzureRouteFilter(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureRouteFilter, AzureRouteFilter)
 !define AzureRouteFilter(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureRouteFilter, AzureRouteFilter)
+!procedure AzureRouteFilter($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureRouteFilter, $stereo=AzureRouteFilter, $tags, $link)
+ !endprocedure
+!procedure AzureRouteFilter($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureRouteFilter, $tags, $link, AzureRouteFilter)
+!endprocedure

@@ -1,12 +1,17 @@
 sprite $AzureHDInsightCluster [70x70/16z] {
-rPO7pkmm28J15NF_-xxg92HZqCQhzd_gkvEX2GlwKJ1z3UVoXqnVaUiaVMVolGrN0zCcfHeoRL8jPRUWTeC-H2SjSX6TC2rfEf7Z1qkTFmwTT5gHzEJeRZEK
-A-59eWLY_yUIC9OGKlJYc6fk9saXAmIeOT0az_-S9ZH0PgcggoXSQk-rc8mjbUwmtY67M2Pwfz6IYZASClO_28RJ7lgWq98CqM3AqFsNoMYKQ5pwm0Lwh0XB
-ctQvTKzRF7zbcxx8RHmWzcgjnXsgB6E8z3-8Z76fY-S-rkFe5Xcg74nvkkEErdvdj9MBU0qOaCna5JCvmnYzcKKtb4LtfpIXIUyy0_GRy84_E34VSBSamkJh
-p7ffqZCcqvuRC4JwUigZJx31RBTH2lllo7XqyboBtYjT90wVD6ZbGQeKW4qve1SaBnMcNHi1ansRs2Icue3oX-Tapam7M118_KimFPF1LB9xf1KuuFZfWjBY
-P6ApaKTRVEc4g-MGtrsoBvsa6f-siHHBZK_RM5gQnNU9fRbP4dd4qXJVnxwKoLBX9dK8fRn8fSbV-a5TI37HAJwJBBW1A0LA_qChuJQY566ENuRYI0DMhnIz
-HVH4TcsIwCNOVBsJtf0z6pmNTegIm6QZ8gmfqUTqpwRH2rWT6wOtrBLDfNUCfGsz9G4vC_q0VWC
+rTQ9SiCm20JG7eu0UQRw_w_jtI9coSP1FTTp2lA2SiWU_objsxPLOtlFad7or9KJA4N4ywkAV8dIOWuo_JEfqg3ha2A8N5OwrDaeo62zhFIatkJpQdaR8bWs
+-KpQPqnnPW0Imv6-ZpHxfqmdvSDjlQ10dzKLMhHnDTD9RKNnTMyWlNGKjkRPENzkrLJbEQfcljunx1Sc8Ve2vGeVKIN6GA585nzcZbwZc6W-Z48_G-I30UIm
+ejCBD5F6KSGPGFApD4TyIwgk18RyNMnwPu-eneKBnuruHeWwWi7z-2mad9aG6rL6OP8A8w0K6Bi6kTlU0ee6X3zuuaCJRCYm5H2Fd56IrePAFeo53K4h8Fam
+wXloLc1O2SELDb-DAg4tA2q45DBwLnKX25KirYP7ukz5Fv8n8qOyx1-0hJdJBlyR0v91z6GmQAsSKlem89KJSoyZtTZfNRkJQ5dfubbGT4r1niOIKx_38gDZ
+dK64Pq-OodqQOwhZ7-G9
 }
 
 AzureEntityColoring(AzureHDInsightCluster)
 !define AzureHDInsightCluster(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureHDInsightCluster, AzureHDInsightCluster)
 !define AzureHDInsightCluster(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureHDInsightCluster, AzureHDInsightCluster)
+!procedure AzureHDInsightCluster($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureHDInsightCluster, $stereo=AzureHDInsightCluster, $tags, $link)
+ !endprocedure
+!procedure AzureHDInsightCluster($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureHDInsightCluster, $tags, $link, AzureHDInsightCluster)
+!endprocedure

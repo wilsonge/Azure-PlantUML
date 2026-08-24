@@ -1,12 +1,17 @@
 sprite $AzureVirtualNetworkPeering [70x70/16z] {
-xTNfSkiW38RXJni2d_k_tnDmP2OCxQ3VpTlLA3pPO_pXlgdYnqnnbhLcwTcQj5Vs8tB6I1ifDcdC3f4c1yC4ac8EBsK7p88ac0IoC0aaomHYG8R98okJG1BC
-WcIPFP9dzaYUqK-4pUmPafeP0NEadupk4IqzVIDMUeoHb9ujp0xXSiT1perKxcJ3r43czSqRKzvHNC5ZJgPEnHbtEY-wAX97k1Dle-SUkIh7w4vknU-6Gdvd
-68cgptjX0taOhpt7YEj8CR8wea06yzo_WGH3tX72dGGoAls80-bv8B4I38WPCvOGOxHkYNYkdHK8eHVH8KCYQY8waJoZnQDYWIGP2I6SG39CyJL2bg69p2JB
-5D_5EQRKRRax9Ns7AVV4wgmWmNYjXH2nJuRFcBWf1B7IKmPlRioUMHuLXTQ8OPEXtvYFuTXPdmmy3mJxQ4MujSRKxgoFg3KM__tiGu5i5068-qfyxXOSfbr1
-kVTmRTPNgW5znJEAOp24sihx4rzX6KN6NHaQYD6zdWT_5hTU4MqrJY1JCPnsFO7g5HdAwxVWDByYcVytGXTnd5vH0yIyPpIM7UUroJ0YwQkCt8s9NFcLMkq7
-5PdysaT8rVxjOkIY7QD8LrVZOY2VNH-84vRoZZEYVAIb9_YRVViF
+xTNPRkqm28LXF62WKzx_RG_P3bBH2L9MRzk_8nlxK-vo_EB-CflLQfezHJnWLnxqu5tEhi1TpY9WYPwp24LmnYBeI7q2OEezojHRdCaxWAat00CXDOCYDOCZ
+p5nTaVm9dyMEgyckf4AMV_4rhFsrfnLJOkwG5UKf3vb9o8qYfPAPK6JYohpkdhDiP5wCH7dAmqRcPYH4Hu9H4L7_3kKrwnxsRg_csRwxJTb8CBl3IrCUvfKu
+ifkxOEoiU7V4CDET6wUkE0ypShNIQOoHxt6SnHYLt68_YJ9oqu4oSX_6gDocqDE85a6Cdl7ePuFrM_QSKMyHHLsgXubAXMZmEkDEhLIYGfaqDHh4ZvYic9_j
+f94mzLg9_dyKPrhp2oV7vFdGvvxjg9aqczUQlHfETEfcH4tW5-4aCMzHL_yrpMHGWnKbOZLhf2P4kXzheOenqJIZrXljswunh9WCDYKtkjfFbBStyw_NRshY
+l_UyQDcRAy-PQ92yNLaZU_D-e1ZHb5VSQ0I2APusYfg5WZBU6jqRSxrXY2jb1yIyttTW0GZA77WV1O9M6JZqyV7nxb_7x-olVm
 }
 
 AzureEntityColoring(AzureVirtualNetworkPeering)
 !define AzureVirtualNetworkPeering(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureVirtualNetworkPeering, AzureVirtualNetworkPeering)
 !define AzureVirtualNetworkPeering(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureVirtualNetworkPeering, AzureVirtualNetworkPeering)
+!procedure AzureVirtualNetworkPeering($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureVirtualNetworkPeering, $stereo=AzureVirtualNetworkPeering, $tags, $link)
+ !endprocedure
+!procedure AzureVirtualNetworkPeering($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureVirtualNetworkPeering, $tags, $link, AzureVirtualNetworkPeering)
+!endprocedure

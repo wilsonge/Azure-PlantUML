@@ -1,10 +1,16 @@
 sprite $DICOMService [70x70/16z] {
-xSu5SePW38JX0DbiuFxthNUnNuBK-up0P-_4Vgf__zhkiDQS9_3W2OBVZNVlm1BeWOyH6x74Hifq9itcIZUfj7Z58hpoQKN_M-5pAb7OKIMVk9ddGW2HKmo0
-kH1wgSeKyIGuZMYZKb5aqY43Bs9J9QwwNe4PSefn5PSLw97xAb8SnfrvHKGj8_M8C2iOPsJYhaEZ24kHuvaeEMEKTQQVIHPDtwtbeOWSYyYXYEInYEoC9B3A
-52D0wjUCysnra33J0AwACdSZUkdNA-gi6_MAEkj6lI8fIjGgTUTNXYSmux0Bp33zvwkXYA-wMKMQMiHah8IDIf7UHg5D28SIGlhXc-bFYVWP5RS6XpNsK_tx
-zmW
+xTQ7hi8m38NXeEOSExdh_T_sTier8iMgsF0nk_uwclrxLXyVSW5RaO_SBI0Xw1RP8ib8I3BvHEKW8OVJbGuZIX0cdQzasINVfa8vHZOhAZh-L_4l0ZotHmNB
+bRsnuWbwbDKEeYVgORvoha0T8K5mwOZR3bVOrAxq_taqIfCVXklxPxGZsnbaRU4cZH5kkqY4eW4ywnAZz2uGYQo9l4166ADUSLI2j6ovHAHtaKZH2qH26IqH
+UoD0FAEjAv6IH5TL7AR4CilpVwF1rI0b-8gdZKQiOhJHY5MChfLJkAh0LQ8kNwczeL9t6Ifr1djcA3Mao2IxYgaXoS3cCYKqIZAiiq8if8O85YorwUFl8f5d
+zV7n3m
 }
 
 AzureEntityColoring(DICOMService)
 !define DICOMService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, DICOMService, DICOMService)
 !define DICOMService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, DICOMService, DICOMService)
+!procedure DICOMService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=DICOMService, $stereo=DICOMService, $tags, $link)
+ !endprocedure
+!procedure DICOMService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, DICOMService, $tags, $link, DICOMService)
+!endprocedure

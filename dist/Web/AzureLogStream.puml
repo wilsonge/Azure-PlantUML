@@ -1,10 +1,16 @@
 sprite $AzureLogStream [70x70/16z] {
-xT87aiCW30LGeMhV_yAxyCFWSPhONlYf27WHJEY7HhTzAi5q7TcdKwuGhhfmEhLpFIEb8fGEUhTpRGCoasibzdsZzoeM4MxfADzMV2xsNWNv96KfIrcAFyrI
-kAZVYCfp9QA7YKXZP9JBMFLCaJeiLqXRpra5TRrMK4ygfV-cilMQiAF7mxg7YlMHZMDf-mfVKefS-lR33aS9Er9Alrf1RT3zJ9PL69zQsx0sKKOpcb3yS23S
-20cQ4HH94efTchR3XQAC1YSKRKrmLnneNkaB-pOcV0Br2GNxK78kuj1cRZVuCYWu4cAeOIwZQ6i66ot63ix_wp2Bmql5XZncKeeIeOr2scjjp6WbfqJf5znB
--6hGiqgWyNCSvPo2zHpNOPIp2ivo7TF8AVaiPIbBuOzGolP-fI4xdvHjBj4GetSg-skKtgdKJeJEiNdb6g4IimhJ3yqB
+xTK5biD020PWdFHPxt_Q5L9AFSowpByI_zu0bVqFpMuuNQJF5E9CxSWIoWq4HiAbZ2ELKawG1Twh-4jC-g7RYer5FqIngKobdwbC9Q7UzhPICIRr6r6nEjXI
+Z03W1aC0P6s5Nw_JzKhY6wYXrDqWjnMGfeAv5Adrnou7SpptK96yLxEitBNmkQN4jvN6Yak9Kc83s5BoJgxLvq5im1gAPLUoavfdvN1HkWglswhbTHMS5njA
+rAwnfUoI7mzxIYrQriUm1ePZIYuUOothLeOggXcjbHWXQ_GbHhtPtQLUBr43NhvfDAzr53aiHa_Vs9YdOjjGuYf8584dijMLZY9m63OUdx2g1xsdEENBrwel
+CUpGkufZpRDI0segXa1-7OuLTfMevLPKlQVqCvMfJ8K-Gi7b_KeWjvIHFyTT8QKCnWjvXrBbl5VPVuIo_w5v1W
 }
 
 AzureEntityColoring(AzureLogStream)
 !define AzureLogStream(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureLogStream, AzureLogStream)
 !define AzureLogStream(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureLogStream, AzureLogStream)
+!procedure AzureLogStream($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureLogStream, $stereo=AzureLogStream, $tags, $link)
+ !endprocedure
+!procedure AzureLogStream($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureLogStream, $tags, $link, AzureLogStream)
+!endprocedure

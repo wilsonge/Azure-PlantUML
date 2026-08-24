@@ -1,11 +1,16 @@
 sprite $AzureDatabaseMigrationService [70x70/16z] {
-xT87jfim48NXwIDb_mkE6I061ecM_loTzWh-pxK4T16BchkR2i9Dual6pnj1u2BsFOPmXNe3mNdcJNnjoTCrubq8Pw3t6PoH3a9l70sdZwJCcIbbYM6W9Vsn
-1rdJypbZtOJ4ZXJ96MYp4d8aPmWQo9kHd17O9wKToHc5NTgBv8USyUAId0aki44baHCNmEb5IopmFDR2zfdkzycJhEpoHQLSh-GCtwZaBsMrRQvuRM4OrGuz
-h1G8TAEIn_33YiD07bRguos1EkTIJ9aHOOJ4ebxQ1uCrCo5y8PehH3XWAwst8Vr3QIYml12CXbyuKbpsBqdhMZmh8yRH_2iXekLpoGV3yQ6M8RDP0wCyHMOw
-MLKylI_vZP4uHb4rymKpLU6Tan6Ob6yBhZZWJSLDXQPxMZvUOKQhYfaG1egBKX6E4LFSLnM17tHTCLDXJ8ZLNhoaAJdZ5iOpvSbqqBQjL8GbtLGsTwCXLmZM
-gAOjYuhaIbuIxEeMWpteLxPKWWPaAsUsL5U2hkCj3CSQMrBbRztosVBPyjdosK9mJ8ws69oX1riGJY7jR64uZsLt2nDSX4JCCc5cGcZw3W
+xT67agqW381X8I61CoNl_xRtXcKSYGMDszT_geMF9aVnCl75gxo6pOdOd8RDXVWPulTWU90JiJaG27XVWMcQqcMcv6MAA9Fx1aOsmLGBXXaI5hd8v7rapVWG
+o_WGPMYjZ17i3Cja5s8PROma8uoPl15J3ThuHBLi6oXcIPnjbYbtbE9JRBDoqAoKtQIMRoeiMd4hhU-abA62DnKcX1X2Kq80J9olAIa6BSROb1XZVO5vHy5Y
+ogaE0FmVD0KrK0dvrF5cDPJG8Bo5BNNeZ08wQ3TbIjzBDfYuL5AhKxXqoPPIJmKm9I9UHAIM8f0tbTUomXWqM2lL242v7o1R31Ffxre4g9lIwscla8ZBQvdC
+6OKewRMQ8c0YEb2aLxJvK05WFcPQAx9iMqdOIdkAzFaKiNaKsUYg8ZjTKUGe6YiisWzM7kLH7kLHv3ifCbJaL0D5phQloCKs5Ddh7m
 }
 
 AzureEntityColoring(AzureDatabaseMigrationService)
 !define AzureDatabaseMigrationService(e_alias, e_label, e_techn) AzureEntity(e_alias, e_label, e_techn, AZURE_SYMBOL_COLOR, AzureDatabaseMigrationService, AzureDatabaseMigrationService)
 !define AzureDatabaseMigrationService(e_alias, e_label, e_techn, e_descr) AzureEntity(e_alias, e_label, e_techn, e_descr, AZURE_SYMBOL_COLOR, AzureDatabaseMigrationService, AzureDatabaseMigrationService)
+!procedure AzureDatabaseMigrationService($alias, $label, $techn, $descr,  $color, $tags, $link)
+ AzureEntity($alias, $label, $techn, $descr,  $color, $sprite=AzureDatabaseMigrationService, $stereo=AzureDatabaseMigrationService, $tags, $link)
+ !endprocedure
+!procedure AzureDatabaseMigrationService($alias, $label, $techn, $descr="",  $tags="", $link="", $color="")
+   AzureEntity($alias, $label, $color, $techn, $descr, AzureDatabaseMigrationService, $tags, $link, AzureDatabaseMigrationService)
+!endprocedure
