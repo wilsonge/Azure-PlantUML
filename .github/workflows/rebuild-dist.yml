@@ -1,0 +1,99 @@
+name: Rebuild dist
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+concurrency:
+  group: rebuild-dist-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  rebuild:
+    if: "!contains(github.event.head_commit.message, '[skip ci]')"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: '7.0.x'
+
+      - name: Install PlantUML
+        run: sudo apt-get update && sudo apt-get install -y plantuml
+
+      - name: Install Playwright CLI
+        run: dotnet tool install -g Microsoft.Playwright.CLI
+
+      - name: Build generator
+        working-directory: scripts
+        run: dotnet build
+
+      - name: Install Playwright browser OS dependencies
+        working-directory: scripts
+        run: |
+          export PATH="$PATH:$HOME/.dotnet/tools"
+          playwright install-deps
+
+      # source/official is gitignored - the Azure icon set isn't checked into
+      # this repo, so it has to be fetched from Microsoft's icons page on
+      # every run. That page's zip link changes as Microsoft ships new icon
+      # versions, so we scrape the current link rather than hardcoding it.
+      - name: Download official Azure icons
+        run: |
+          set -euo pipefail
+          PAGE=$(curl -fsSL https://learn.microsoft.com/en-us/azure/architecture/icons/)
+          ZIP_URL=$(echo "$PAGE" | grep -oE 'https://arch-center\.azureedge\.net/icons/[^"() ]+\.zip' | head -n1)
+          if [ -z "$ZIP_URL" ]; then
+            echo "::error::Could not find the icon zip URL on Microsoft's icons page. The page layout may have changed." >&2
+            exit 1
+          fi
+          echo "Downloading $ZIP_URL"
+          curl -fsSL "$ZIP_URL" -o /tmp/azure-icons.zip
+
+          rm -rf /tmp/azure-icons-extracted
+          mkdir -p /tmp/azure-icons-extracted
+          unzip -q /tmp/azure-icons.zip -d /tmp/azure-icons-extracted
+
+          ICONS_DIR=$(find /tmp/azure-icons-extracted -type d -iname "Icons" | head -n1)
+          if [ -z "$ICONS_DIR" ]; then
+            echo "::error::Could not locate an 'Icons' folder inside the downloaded zip." >&2
+            exit 1
+          fi
+
+          mkdir -p source/official
+          find source/official -mindepth 1 -maxdepth 1 ! -name 'README.md' -exec rm -rf {} +
+          cp -r "$ICONS_DIR"/. source/official/
+
+      - name: Create appsettings.json
+        run: |
+          cat > scripts/appsettings.json <<'EOF'
+          {
+              "sourceFolderPath": "../source",
+              "targetFolderPath": "../dist",
+              "monochromeColorHex": "#0072C6",
+              "plantUmlPath": "/usr/share/plantuml/plantuml.jar"
+          }
+          EOF
+
+      - name: Generate PlantUML distro
+        working-directory: scripts
+        run: dotnet run
+
+      - name: Commit and push dist changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add dist
+          if git diff --cached --quiet; then
+            echo "No changes to dist/"
+            exit 0
+          fi
+          git commit -m "chore: rebuild dist [skip ci]"
+          git push
