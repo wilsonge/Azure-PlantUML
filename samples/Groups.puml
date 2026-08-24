@@ -10,15 +10,11 @@ AzureCloudGroup(cloud, "Azure Cloud") {
     SubscriptionGroup(subscription, "Landing Zone") {
         VNetGroup(vNet1) {
             SubnetGroup(subnet1) {
-                AvailabilityZoneGroup(zone1, "Zone 1") {
-                    AzureCosmosDb(outputCosmosDb1, "Output Database", "1,000 RUs")
-                }
+                AzureCosmosDb(outputCosmosDb1, "Output Database", "1,000 RUs")
             }
 
             SubnetGroup(subnet2) {
-                AvailabilityZoneGroup(zone2, "Zone 2") {
-                    AzureCosmosDb(outputCosmosDb2, "Output Database", "1,000 RUs")
-                }
+                AzureCosmosDb(outputCosmosDb2, "Output Database", "1,000 RUs")
             }
         }
     }
