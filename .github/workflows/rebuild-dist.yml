@@ -15,7 +15,7 @@ concurrency:
 jobs:
   rebuild:
     if: "!contains(github.event.head_commit.message, '[skip ci]')"
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -28,18 +28,19 @@ jobs:
       - name: Install PlantUML
         run: sudo apt-get update && sudo apt-get install -y plantuml
 
-      - name: Install Playwright CLI
-        run: dotnet tool install -g Microsoft.Playwright.CLI
-
       - name: Build generator
         working-directory: scripts
         run: dotnet build
 
+      # Microsoft.Playwright.CLI (the global dotnet tool the README describes)
+      # is deprecated and frozen at v1.2.3 from 2022 - its install-deps
+      # dependency lists predate Ubuntu 24.04's package renames. The build
+      # output ships a playwright.ps1 script that's always version-matched to
+      # the Microsoft.Playwright package referenced in GeneratePuml.csproj, so
+      # use that instead. pwsh is preinstalled on GitHub-hosted runners.
       - name: Install Playwright browser OS dependencies
         working-directory: scripts
-        run: |
-          export PATH="$PATH:$HOME/.dotnet/tools"
-          playwright install-deps
+        run: pwsh bin/Debug/net7.0/playwright.ps1 install-deps
 
       # source/official is gitignored - the Azure icon set isn't checked into
       # this repo, so it has to be fetched from Microsoft's icons page on
