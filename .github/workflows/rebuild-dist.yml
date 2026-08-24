@@ -23,7 +23,7 @@ jobs:
       - name: Setup .NET
         uses: actions/setup-dotnet@v6
         with:
-          dotnet-version: '7.0.x'
+          dotnet-version: '10.0.x'
 
       - name: Install PlantUML
         run: sudo apt-get update && sudo apt-get install -y plantuml
@@ -40,7 +40,7 @@ jobs:
       # use that instead. pwsh is preinstalled on GitHub-hosted runners.
       - name: Install Playwright browser OS dependencies
         working-directory: scripts
-        run: pwsh bin/Debug/net7.0/playwright.ps1 install-deps
+        run: pwsh bin/Debug/net10.0/playwright.ps1 install-deps
 
       # source/official is gitignored - the Azure icon set isn't checked into
       # this repo, so it has to be fetched from Microsoft's icons page on
