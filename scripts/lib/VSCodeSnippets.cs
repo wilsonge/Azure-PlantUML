@@ -17,6 +17,26 @@ public static class VSCodeSnippets
                 continue;
             }
 
+            var category = Directory.GetParent(filePath)!.Name;
+
+            // Group macros live in their own file (e.g. Subscription.puml) but are
+            // defined as "{entityName}Group" with a (alias, label) signature, unlike
+            // entity macros which share the file's name and take (alias, label, techn[, descr]).
+            if (category == "Groups")
+            {
+                var groupMacroName = $"{entityName}Group";
+                snippets.Add(groupMacroName, new Snippet{
+                    prefix = $"{SplitCamelCase(groupMacroName)}",
+                    description = $"Add {SplitCamelCase(groupMacroName)} to diagram",
+                    body = new List<string>{
+                        $"{groupMacroName}(${{1:alias}}, \"${{2:label}}\") {{",
+                        "\t$0",
+                        "}"
+                    }
+                });
+                continue;
+            }
+
             snippets.Add($"{entityName}", new Snippet{
                 prefix = $"{SplitCamelCase(entityName)}",
                 description = $"Add {SplitCamelCase(entityName)} to diagram",

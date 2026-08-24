@@ -1,10 +1,21 @@
 @startuml Hello Groups
 !pragma revision 1
 
-!define AzurePuml https://raw.githubusercontent.com/anton-kasperovich/Azure-PlantUML/master/dist
+!define AzurePuml https://raw.githubusercontent.com/plantuml-stdlib/Azure-PlantUML/master/dist
 !includeurl AzurePuml/AzureCommon.puml
 !includeurl AzurePuml/Databases/AzureCosmosDb.puml
 !includeurl AzurePuml/Groups/all.puml
+
+' Groups render as a rectangle with a stereotype used purely for styling.
+' "StereotypeFontSize 0" (set in AzureGroupColoring) hides the stereotype
+' text itself, but PlantUML still reserves a blank line for it unless the
+' stereotype is also hidden. Scope the hide to each group stereotype (rather
+' than a blanket "hide stereotype") so entity stereotypes, e.g. the
+' «AzureCosmosDb» label below, are left alone.
+hide <<AzureCloudGroup>> stereotype
+hide <<SubscriptionGroup>> stereotype
+hide <<VNetGroup>> stereotype
+hide <<SubnetGroup>> stereotype
 
 AzureCloudGroup(cloud, "Azure Cloud") {
     SubscriptionGroup(subscription, "Landing Zone") {

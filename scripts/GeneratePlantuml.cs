@@ -74,8 +74,7 @@ public class GeneratePlantuml : IHostedService
             CombineMultipleFilesIntoSingleFile(categoryDirectoryPath, "*.puml", catAllFilePath);
         }
 
-        // @TODO: uncomment and fix snippets generation (got broken after Groups were introduced)
-        // await VSCodeSnippets.GenerateSnippets(targetFolder);
+        await VSCodeSnippets.GenerateSnippets(targetFolder);
         await MarkdownTable.GenerateTable(targetFolder);
         await this.StopAsync(new System.Threading.CancellationToken());
     }
@@ -245,7 +244,7 @@ public class GeneratePlantuml : IHostedService
             pumlContent.AppendLine($"!return \"<img data:image/png;base64,{encoded_string}{{scale=\"+$scale+\"}}>\"");
             pumlContent.AppendLine($"!endfunction\n");
 
-            pumlContent.AppendLine($"AzureGroupColoring({groupName}, #FFFFFF, AZURE_BORDER_COLOR, plain)");
+            pumlContent.AppendLine($"$AzureGroupColoring({groupName})");
             pumlContent.AppendLine($"!define {groupName}(g_alias, g_label=\"{entityName}\") AzureGroupEntity(g_alias, g_label, AZURE_SYMBOL_COLOR, {entityName}, {groupName})");
         } else {
             pumlContent.AppendLine($"AzureEntityColoring({entityName})");

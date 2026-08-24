@@ -37,18 +37,32 @@ skinparam rectangle<<e_stereo>> {
 }
 !enddefinelong
 
+' feature flag: PlantUML added per-stereotype <style> HorizontalAlignment
+' support in 2024.8, so only emit it on interpreters new enough to honor it
+!$PUML_VERSION = %splitstr_regex(%version(), "((\.|beta))")
+!$PUML_YEAR = %intval($PUML_VERSION[1])
+!$PUML_RELEASE = %intval($PUML_VERSION[2])
+!$AZURE_FLAG_GROUPALIGNMENT = $PUML_YEAR > 2024 || ($PUML_YEAR == 2024 && $PUML_RELEASE >= 8)
+
 ' "StereotypeFontSize 0" below will hide text
 ' still need "hide stereotype" in diagrams to hide whitespace
-!definelong AzureGroupColoring(g_stereo, g_background_color, g_border_color, g_border_style)
-skinparam rectangle<<g_stereo>> {
+!procedure $AzureGroupColoring($stereo, $border_color=AZURE_BORDER_COLOR, $border_style="plain", $alignment="left")
+!if ($AZURE_FLAG_GROUPALIGNMENT)
+<style>
+.$stereo {
+    HorizontalAlignment $alignment
+}
+</style>
+!endif
+skinparam rectangle<<$stereo>> {
     StereotypeFontSize 0
-    BackgroundColor g_background_color
-    BorderColor g_border_color
-    BorderStyle g_border_style
+    BackgroundColor AZURE_BG_COLOR
+    BorderColor $border_color
+    BorderStyle $border_style
     Shadowing false
     RoundCorner 0
 }
-!enddefinelong
+!endprocedure
 
 ' Layout
 ' ##################################
