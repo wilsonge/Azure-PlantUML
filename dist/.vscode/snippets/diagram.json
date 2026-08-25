@@ -3023,6 +3023,15 @@
       "$0"
     ]
   },
+  "AvailabilitySetGroup": {
+    "prefix": "Availability Set Group",
+    "description": "Add Availability Set Group to diagram",
+    "body": [
+      "AvailabilitySetGroup(${1:alias}, \"${2:label}\") {",
+      "\t$0",
+      "}"
+    ]
+  },
   "SubscriptionGroup": {
     "prefix": "Subscription Group",
     "description": "Add Subscription Group to diagram",
