@@ -16,16 +16,21 @@ hide <<AzureCloudGroup>> stereotype
 hide <<SubscriptionGroup>> stereotype
 hide <<VNetGroup>> stereotype
 hide <<SubnetGroup>> stereotype
+hide <<AvailabilitySetGroup>> stereotype
 
 AzureCloudGroup(cloud, "Azure Cloud") {
     SubscriptionGroup(subscription, "Landing Zone") {
         VNetGroup(vNet1) {
             SubnetGroup(subnet1) {
-                AzureCosmosDb(outputCosmosDb1, "Output Database", "1,000 RUs")
+                AvailabilitySetGroup(availabilitySet1, "Availability Set 1") {
+                    AzureCosmosDb(outputCosmosDb1, "Output Database", "1,000 RUs")
+                }
             }
 
             SubnetGroup(subnet2) {
-                AzureCosmosDb(outputCosmosDb2, "Output Database", "1,000 RUs")
+                AvailabilitySetGroup(availabilitySet2, "Availability Set 2") {
+                    AzureCosmosDb(outputCosmosDb2, "Output Database", "1,000 RUs")
+                }
             }
         }
     }

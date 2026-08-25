@@ -617,3 +617,5 @@ Categories:
     Target: VNet
   - Source: VNet-Subnets_COLOR
     Target: Subnet
+  - Source: Availability Sets
+    Target: AvailabilitySet
